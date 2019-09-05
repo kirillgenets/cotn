@@ -92,7 +92,7 @@ gulp.task('server', function () {
 gulp.task('copy', function () {
 
 	return gulp.src([
-			'www/fonts/**/*.{woff,woff2}',
+			'www/fonts/**/*.{woff,woff2,otf}',
 			'www/js/**'
 		], {
 			base: 'www'
@@ -109,7 +109,7 @@ gulp.task('clean', function () {
 
 gulp.task('js', function() {
 
-	return gulp.src('www/js/main.js')
+	return gulp.src('www/js/*.js')
 		.pipe(minify({
 			ext:{
 	            min:'.min.js'

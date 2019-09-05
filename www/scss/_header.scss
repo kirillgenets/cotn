@@ -1,0 +1,161 @@
+/******
+HEADER
+******/
+
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 1170px;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 45px;
+}
+
+.header__logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 275px;
+}
+
+.header__logo img {
+	width: 105px;
+	height: 37px;
+	padding-top: 5px;
+}
+
+.header__logo p {
+	width: 145px;
+	margin: 0;
+
+	font-family: $fr-l;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #646163;
+}
+
+.header__search {
+	position: relative;
+
+	&::after {
+		content: '';
+
+		width: 14px;
+		height: 14px;
+
+		position: absolute;
+		right: 15px;
+		top: 50%;
+
+		background-image: url(../img/magnifying-glass.png);
+
+		transform: translateY(-50%);
+	}
+
+}
+
+.header__search-input {
+	width: 230px;
+	box-sizing: border-box;
+	border: 1px solid #ebebeb;
+	padding: 10px 40px 12px 15px;
+
+	font-family: $fr-l;
+	font-size: 14px;
+	font-weight: 300;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:focus {
+		border: 1px solid #000;
+
+		outline: none;
+	}
+
+}
+
+.header__contacts {
+	display: flex;
+	justify-content: space-between;
+
+	list-style: none;
+
+	width: 460px;
+	margin: 0;
+	padding: 0;
+
+	font-size: 14px;
+}
+
+.header__contacts-value {
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	font-family: $fr-smb;
+}
+
+.header__contacts-description {
+	margin: 0;
+
+	font-family: $fr-l;
+}
+
+.header__shop {
+	padding-left: 17px;
+	border-left: 1px solid #e1e1e1;
+}
+
+.header__shop-button {
+	width: 33px;
+	height: 29px;
+	border: none;
+
+	position: relative;
+
+	background-color: transparent;
+	background-image: url(../img/shop.png);
+
+	cursor: pointer;
+
+	transition: 0.3s;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&::after {
+		content: '2';
+
+		width: 18px;
+		height: 18px;
+		box-sizing: border-box;
+		padding-top: 1px;
+		border-radius: 50%;
+
+		position: absolute;
+		right: -15px;
+		top: -15px;
+
+		background-color: #faeaca;
+
+		font-family: $fr-l;
+		font-size: 12px;
+		font-weight: 300;
+		text-align: center;
+	}
+
+}

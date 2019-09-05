@@ -1,0 +1,42 @@
+/******
+NAV
+******/
+
+.nav {
+	padding: 15px 0;
+	border-bottom: 1px solid #e1e1e1;
+
+	background-color: #fff;
+}
+
+.nav__wrapper {
+	display: flex;
+	justify-content: space-between;
+
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.nav__list {
+	display: flex;
+	justify-content: space-between;
+
+	list-style: none;
+
+	width: 990px;
+	margin: 0;
+	padding: 0;
+}
+
+.nav__item a {
+	font-family: $fr-l;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #646163;
+
+	&:hover {
+		color: #000;
+	}
+
+}

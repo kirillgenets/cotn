@@ -1,0 +1,37 @@
+/**********
+TYPOGRAPHY
+**********/
+
+@font-face{
+	font-family: 'Montseratt Medium';
+	src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+		url('../fonts/Montserrat-Medium.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'ProximaNova Regular';
+	src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Regular.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Francker Regular';
+	src: url('../fonts/FranckerCYR-CondensedReg.otf') format('opentype');
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Francker Semibold';
+	src: url('../fonts/FranckerCYR-CondensedSmbold.otf') format('opentype');
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Francker Light';
+	src: url('../fonts/FranckerCYR-CondensedLight.otf') format('opentype');
+	font-display: swap;
+}
+
+

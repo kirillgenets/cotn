@@ -1,0 +1,57 @@
+/******
+CITIES
+******/
+
+.cities {
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+}
+
+.cities__chosen-city {
+	padding: 0 30px;
+
+	position: relative;
+
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	cursor: pointer;
+
+	&::after {
+		content: '';
+
+		width: 11px;
+		height: 7px;
+
+		position: absolute;
+		right: 0;
+		top: 50%;
+
+		background-image: url(../img/arrow-point-to-right.png);
+
+		transform: translateY(-50%);
+	}
+
+	&::before {
+		content: '';
+
+		width: 12px;
+		height: 15px;
+
+		position: absolute;
+		left: 0;
+		top: 50%;
+
+		background-image: url(../img/place.png);
+
+		transform: translateY(-50%);
+	}
+
+}
+
+.cities__list {
+	display: none;
+}

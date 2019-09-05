@@ -1,0 +1,252 @@
+/********************
+SPECIFICATION
+********************/
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  scroll-behavior: smooth; }
+
+main {
+  overflow: hidden; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.hidden {
+  display: none; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/**********
+TYPOGRAPHY
+**********/
+@font-face {
+  font-family: 'Montseratt Medium';
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ProximaNova Regular';
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Francker Regular';
+  src: url("../fonts/FranckerCYR-CondensedReg.otf") format("opentype");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Francker Semibold';
+  src: url("../fonts/FranckerCYR-CondensedSmbold.otf") format("opentype");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Francker Light';
+  src: url("../fonts/FranckerCYR-CondensedLight.otf") format("opentype");
+  font-display: swap; }
+
+/******
+HEADER
+******/
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 45px; }
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 275px; }
+
+.header__logo img {
+  width: 105px;
+  height: 37px;
+  padding-top: 5px; }
+
+.header__logo p {
+  width: 145px;
+  margin: 0;
+  font-family: "Francker Light", Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #646163; }
+
+.header__search {
+  position: relative; }
+  .header__search::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    background-image: url(../img/magnifying-glass.png);
+    transform: translateY(-50%); }
+
+.header__search-input {
+  width: 230px;
+  box-sizing: border-box;
+  border: 1px solid #ebebeb;
+  padding: 10px 40px 12px 15px;
+  font-family: "Francker Light", Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 300; }
+  .header__search-input:hover {
+    opacity: 0.8; }
+  .header__search-input:focus {
+    border: 1px solid #000;
+    outline: none; }
+
+.header__contacts {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 460px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px; }
+
+.header__contacts-value {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Francker Semibold", Tahoma, sans-serif; }
+
+.header__contacts-description {
+  margin: 0;
+  font-family: "Francker Light", Tahoma, sans-serif; }
+
+.header__shop {
+  padding-left: 17px;
+  border-left: 1px solid #e1e1e1; }
+
+.header__shop-button {
+  width: 33px;
+  height: 29px;
+  border: none;
+  position: relative;
+  background-color: transparent;
+  background-image: url(../img/shop.png);
+  cursor: pointer;
+  transition: 0.3s; }
+  .header__shop-button:hover {
+    opacity: 0.8; }
+  .header__shop-button:active {
+    opacity: 0.6; }
+  .header__shop-button:focus {
+    outline: none; }
+  .header__shop-button::after {
+    content: '2';
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    padding-top: 1px;
+    border-radius: 50%;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background-color: #faeaca;
+    font-family: "Francker Light", Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center; }
+
+/******
+NAV
+******/
+.nav {
+  padding: 15px 0;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: #fff; }
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto; }
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 990px;
+  margin: 0;
+  padding: 0; }
+
+.nav__item a {
+  font-family: "Francker Light", Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #646163; }
+  .nav__item a:hover {
+    color: #000; }
+
+/******
+CITIES
+******/
+.cities {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.cities__chosen-city {
+  padding: 0 30px;
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .cities__chosen-city::after {
+    content: '';
+    width: 11px;
+    height: 7px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-image: url(../img/arrow-point-to-right.png);
+    transform: translateY(-50%); }
+  .cities__chosen-city::before {
+    content: '';
+    width: 12px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-image: url(../img/place.png);
+    transform: translateY(-50%); }
+
+.cities__list {
+  display: none; }
