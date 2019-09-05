@@ -19,6 +19,8 @@ HEADER
 	align-items: center;
 
 	width: 275px;
+
+	transition: 0.3s;
 }
 
 .header__logo img {
@@ -40,22 +42,23 @@ HEADER
 
 .header__search {
 	position: relative;
+}
 
-	&::after {
-		content: '';
+.header__search-button {
+	width: 14px;
+	height: 14px;
+	border: none;
 
-		width: 14px;
-		height: 14px;
+	position: absolute;
+	right: 15px;
+	top: 50%;
 
-		position: absolute;
-		right: 15px;
-		top: 50%;
+	background-color: transparent;
+	background-image: url(../img/magnifying-glass.png);
 
-		background-image: url(../img/magnifying-glass.png);
+	transform: translateY(-50%);
 
-		transform: translateY(-50%);
-	}
-
+	cursor: pointer;
 }
 
 .header__search-input {
@@ -125,18 +128,6 @@ HEADER
 
 	transition: 0.3s;
 
-	&:hover {
-		opacity: 0.8;
-	}
-
-	&:active {
-		opacity: 0.6;
-	}
-
-	&:focus {
-		outline: none;
-	}
-
 	&::after {
 		content: '2';
 
@@ -159,3 +150,68 @@ HEADER
 	}
 
 }
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 768px) {
+
+	.header__logo {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+
+	}
+
+	.header__search-input {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:focus {
+			border: 1px solid #000;
+
+			outline: none;
+		}
+
+	}
+
+	.header__search-button {
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		&:active {
+			opacity: 0.5;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+	}
+
+	.header__shop-button {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+	}
+
+}
+

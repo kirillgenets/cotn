@@ -20,6 +20,8 @@ CITIES
 
 	cursor: pointer;
 
+	transition: 0.3s;
+
 	&::after {
 		content: '';
 
@@ -55,3 +57,22 @@ CITIES
 .cities__list {
 	display: none;
 }
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 768px) {
+
+	.cities__chosen-city {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+
+	}
+
+}
+

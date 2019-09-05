@@ -1,0 +1,75 @@
+/************
+MENU CATALOG
+************/
+
+.menu-catalog__title {
+	display: block;
+
+	width: 220px;
+	padding-top: 20px;
+	padding-bottom: 21px;
+
+	position: relative;
+
+	background-color: $dark-purple;
+
+	font-family: $fr-smb;
+	font-size: 14px;
+	white-space: nowrap;
+	text-transform: uppercase;
+	text-align: center;
+	color: #e1e1e1;
+
+	transition: 0.3s;
+
+	&::before {
+		content: '';
+
+		width: 100vw;
+		height: 100%;
+
+		position: absolute;
+		right: 100%;
+		top: 0;
+
+		background-color: $dark-purple;
+	}
+
+	&::after {
+		content: '';
+
+		width: 15px;
+		height: 15px;
+
+		position: absolute;
+		left: 0;
+		top: 50%;
+
+		background-image: url(../img/catalog-rects.png);
+
+		transform: translateY(-50%);
+	}
+
+}
+
+.menu-catalog__list {
+	display: none;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 768px) {
+
+	.menu-catalog__title {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+
+	}
+
+}

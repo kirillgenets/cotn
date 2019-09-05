@@ -88,7 +88,8 @@ HEADER
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 275px; }
+  width: 275px;
+  transition: 0.3s; }
 
 .header__logo img {
   width: 105px;
@@ -106,15 +107,18 @@ HEADER
 
 .header__search {
   position: relative; }
-  .header__search::after {
-    content: '';
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    background-image: url(../img/magnifying-glass.png);
-    transform: translateY(-50%); }
+
+.header__search-button {
+  width: 14px;
+  height: 14px;
+  border: none;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  background-color: transparent;
+  background-image: url(../img/magnifying-glass.png);
+  transform: translateY(-50%);
+  cursor: pointer; }
 
 .header__search-input {
   width: 230px;
@@ -161,12 +165,6 @@ HEADER
   background-image: url(../img/shop.png);
   cursor: pointer;
   transition: 0.3s; }
-  .header__shop-button:hover {
-    opacity: 0.8; }
-  .header__shop-button:active {
-    opacity: 0.6; }
-  .header__shop-button:focus {
-    outline: none; }
   .header__shop-button::after {
     content: '2';
     width: 18px;
@@ -182,6 +180,30 @@ HEADER
     font-size: 12px;
     font-weight: 300;
     text-align: center; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 768px) {
+  .header__logo:hover {
+    opacity: 0.8; }
+  .header__logo:active {
+    opacity: 0.6; }
+  .header__search-input:hover {
+    opacity: 0.8; }
+  .header__search-input:focus {
+    border: 1px solid #000;
+    outline: none; }
+  .header__search-button:hover {
+    opacity: 0.7; }
+  .header__search-button:active {
+    opacity: 0.5; }
+  .header__search-button:focus {
+    outline: none; }
+  .header__shop-button:hover {
+    opacity: 0.8; }
+  .header__shop-button:active {
+    opacity: 0.6; }
+  .header__shop-button:focus {
+    outline: none; } }
 
 /******
 NAV
@@ -211,8 +233,13 @@ NAV
   font-weight: 300;
   text-transform: uppercase;
   color: #646163; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 768px) {
   .nav__item a:hover {
     color: #000; }
+  .nav__item a:active {
+    opacity: 0.6; } }
 
 /******
 CITIES
@@ -228,7 +255,8 @@ CITIES
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 0.3s; }
   .cities__chosen-city::after {
     content: '';
     width: 11px;
@@ -250,3 +278,93 @@ CITIES
 
 .cities__list {
   display: none; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 768px) {
+  .cities__chosen-city:hover {
+    opacity: 0.8; }
+  .cities__chosen-city:active {
+    opacity: 0.6; } }
+
+/*********
+MAIN MENU
+*********/
+.main-menu {
+  background-color: #442e3f; }
+
+.main-menu__wrapper {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto; }
+
+.main-menu__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.main-menu__item {
+  padding: 18px 30px 20px; }
+
+.main-menu__item a {
+  margin: 0;
+  font-family: "Francker Semibold", Tahoma, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #fff;
+  transition: 0.3s; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 768px) {
+  .main-menu__item a:hover {
+    opacity: 0.8; }
+  .main-menu__item a:active {
+    opacity: 0.6; } }
+
+/************
+MENU CATALOG
+************/
+.menu-catalog__title {
+  display: block;
+  width: 220px;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  position: relative;
+  background-color: #110c10;
+  font-family: "Francker Semibold", Tahoma, sans-serif;
+  font-size: 14px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-align: center;
+  color: #e1e1e1;
+  transition: 0.3s; }
+  .menu-catalog__title::before {
+    content: '';
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    background-color: #110c10; }
+  .menu-catalog__title::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-image: url(../img/catalog-rects.png);
+    transform: translateY(-50%); }
+
+.menu-catalog__list {
+  display: none; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 768px) {
+  .menu-catalog__title:hover {
+    opacity: 0.8; }
+  .menu-catalog__title:active {
+    opacity: 0.6; } }
