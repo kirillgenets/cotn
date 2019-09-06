@@ -7,6 +7,8 @@ CITIES
 
 	margin: 0;
 	padding: 0;
+
+	position: relative;
 }
 
 .cities__chosen-city {
@@ -15,7 +17,6 @@ CITIES
 	position: relative;
 
 	font-size: 12px;
-	font-weight: 400;
 	text-transform: uppercase;
 
 	cursor: pointer;
@@ -30,11 +31,9 @@ CITIES
 
 		position: absolute;
 		right: 0;
-		top: 50%;
+		top: 4px;
 
 		background-image: url(../img/arrow-point-to-right.png);
-
-		transform: translateY(-50%);
 	}
 
 	&::before {
@@ -52,10 +51,44 @@ CITIES
 		transform: translateY(-50%);
 	}
 
+	&--opened {
+
+		&::after {
+			transform: rotate(180deg);
+		}
+
+	}
+
 }
 
 .cities__list {
-	display: none;
+	list-style: none;
+
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #e1e1e1;
+	border-top: none;
+
+	position: absolute;
+	left: 0;
+	top: calc(100% + 5px);
+	z-index: 1;
+
+	background-color: #fff;
+
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.cities__city {
+	padding: 5px 2px;
+	border-top: 1px solid #e1e1e1;
+
+	cursor: pointer;
+
+	transition: 0.3s;
 }
 
 /*RESPONSIVE*/
@@ -63,6 +96,18 @@ CITIES
 @media screen and (min-width: 768px) {
 
 	.cities__chosen-city {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+
+	}
+
+	.cities__city {
 
 		&:hover {
 			opacity: 0.8;
