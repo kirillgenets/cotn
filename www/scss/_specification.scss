@@ -7,6 +7,7 @@ body {
 	margin: 0;
 	font-family: $fr-reg;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 main {
@@ -35,10 +36,6 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 }
 
-.hidden {
-  display: none;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -53,4 +50,8 @@ input[type="radio"].visually-hidden {
   overflow: auto;
 
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hidden {
+  display: none;
 }

@@ -23,19 +23,6 @@ CITIES
 
 	transition: 0.3s;
 
-	&::after {
-		content: '';
-
-		width: 11px;
-		height: 7px;
-
-		position: absolute;
-		right: 0;
-		top: 4px;
-
-		background-image: url(../img/arrow-point-to-right.png);
-	}
-
 	&::before {
 		content: '';
 
@@ -47,8 +34,23 @@ CITIES
 		top: 50%;
 
 		background-image: url(../img/place.png);
+		background-size: 100%;
 
 		transform: translateY(-50%);
+	}
+
+	&::after {
+		content: '';
+
+		width: 11px;
+		height: 7px;
+
+		position: absolute;
+		right: 0;
+		top: 4px;
+
+		background-image: url(../img/arrow-point-to-right.png);
+		background-size: 100%;
 	}
 
 	&--opened {
@@ -73,7 +75,7 @@ CITIES
 	position: absolute;
 	left: 0;
 	top: calc(100% + 5px);
-	z-index: 1;
+	z-index: 2;
 
 	background-color: #fff;
 
@@ -115,6 +117,54 @@ CITIES
 
 		&:active {
 			opacity: 0.6;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+	.cities__chosen-city {
+		padding: 0 15px;
+
+		font-size: 11px;
+
+		&::before {
+			width: 8px;
+			height: 10px;
+
+			background-repeat: no-repeat;
+		}
+
+		&::after {
+			width: 8px;
+			height: 5px;
+		}
+
+	}
+
+	.cities__city {
+		font-size: 10px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.cities__chosen-city {
+		padding: 0 30px;
+
+		font-size: 12px;
+
+		&::before {
+			width: 12px;
+			height: 15px;
+		}
+
+		&::after {
+			width: 11px;
+			height: 7px;
 		}
 
 	}

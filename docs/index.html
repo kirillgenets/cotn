@@ -16,32 +16,56 @@
 
 			<div class="nav__wrapper">
 
+				<button class="nav__toggler">
+					<span class="visually-hidden">
+						Открыть меню
+					</span>
+				</button>
+
 				<ul class="cities" aria-label="Выберите Ваш город">
 					<li>
 						<span class="cities__chosen-city">
 							Москва
 						</span>
-						<ul class="cities__list">
-							<li class="cities__city">
+						<ul class="cities__list hidden">
+							<li class="cities__city" data-option="" data-value="1">
+								Москва
+							</li>
+							<li class="cities__city" data-option="" data-value="2">
 								Санкт-Петербург
 							</li>
-							<li class="cities__city">
+							<li class="cities__city" data-option="" data-value="3">
 								Новосибирск
 							</li>
-							<li class="cities__city">
+							<li class="cities__city" data-option="" data-value="4">
 								Калининград
 							</li>
-							<li class="cities__city">
+							<li class="cities__city" data-option="" data-value="5">
 								Челябинск
 							</li>
-							<li class="cities__city">
+							<li class="cities__city" data-option="" data-value="6">
 								Волгоград
 							</li>
-							<li class="cities__city">
+							<li class="cities__city" data-option="" data-value="7">
 								Иркутск
 							</li>
-							<li class="cities__city">
+							<li class="cities__city" data-option="" data-value="8">
 								Мурманск
+							</li>
+							<li class="cities__city" data-option="" data-value="9">
+								Норильск
+							</li>
+							<li class="cities__city" data-option="" data-value="10">
+								Архангельск
+							</li>
+							<li class="cities__city" data-option="" data-value="11">
+								Иваново
+							</li>
+							<li class="cities__city" data-option="" data-value="12">
+								Магнитогорск
+							</li>
+							<li class="cities__city" data-option="" data-value="13">
+								Пермь
 							</li>
 						</ul>
 					</li>
@@ -73,7 +97,7 @@
 						<a href="#">СПБТ</a>
 					</li>
 					<li class="nav__item">
-						<a href="#">Доствка</a>
+						<a href="#">Доставка</a>
 					</li>
 					<li class="nav__item">
 						<a href="#">Контакты</a>
@@ -130,93 +154,130 @@
 			</div>
 		</div>
 
-		<nav class="main-menu">
-			<div class="main-menu__wrapper">
-				<div class="menu-catalog">
-					<a class="menu-catalog__title" href="#">Каталог продукции</a>
-					<ul class="menu-catalog__list">
-						<li class="menu-catalog__item">
-							<a class="menu-catalog__name" href="#">Нефтепродукты</a>
-						</li>
-						<li class="menu-catalog__item">
-							<a class="menu-catalog__name" href="#">Смазочные материалы</a>
-						</li>
-						<li class="menu-catalog__item menu-catalog__item--parent">
-							<a class="menu-catalog__name" href="#">Каталог Liqui Moly</a>
-							<ul class="menu-catalog__sublist">
-								<li class="menu-catalog__sublist-item">
-									<a href="#">Масла и смазки</a>
+		<nav class="menu">
+			<div class="menu__wrapper">
+				<ul class="menu-catalog">
+					<li>
+						<a class="menu-catalog__title" href="catalog.html">Каталог продукции</a>
+						<div class="menu-catalog__list-wrapper hidden">
+							<ul class="menu-catalog__list">
+								<li class="menu-catalog__item">
+									<a class="menu-catalog__name" href="#">Нефтепродукты</a>
 								</li>
-								<li class="menu-catalog__sublist-item">
-									<a href="#">Автохимия профессиональная</a>
+								<li class="menu-catalog__item">
+									<a class="menu-catalog__name" href="#">Смазочные материалы</a>
 								</li>
-								<li class="menu-catalog__sublist-item">
-									<a href="#">Велосипедная программа</a>
+								<li class="menu-catalog__item menu-catalog__item--parent">
+									<a class="menu-catalog__name" href="#">Каталог Liqui Moly</a>
+									<div class="menu-catalog__sublist-wrapper hidden">
+										<ul class="menu-catalog__sublist">
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Масла и смазки</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Масла и смазки</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Масла и смазки</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Масла и смазки</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+										</ul>
+										<div class="menu-catalog__product-info">
+											<img src="img/liqui-moly-logo.jpg" alt="Логотип компании-производителя">
+											<p>Liqui Moly – одна из ведущих компаний по производству автохимии, присадок, автокосметики, моторных и трансмиссионных масел премиум качества.</p>
+										</div>
+									</div>
 								</li>
-								<li class="menu-catalog__sublist-item">
-									<a href="#">Масла и смазки</a>
+								<li class="menu-catalog__item">
+									<a class="menu-catalog__name" href="#">Каталог Texaco</a>
 								</li>
-								<li class="menu-catalog__sublist-item">
-									<a href="#">Автохимия профессиональная</a>
+								<li class="menu-catalog__item menu-catalog__item--parent">
+									<a class="menu-catalog__name" href="#">Каталог Sentoil</a>
+									<div class="menu-catalog__sublist-wrapper hidden">
+										<ul class="menu-catalog__sublist">
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Масла и смазки</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+										</ul>
+									</div>
 								</li>
-								<li class="menu-catalog__sublist-item">
-									<a href="#">Велосипедная программа</a>
-								</li>
-								<li class="menu-catalog__sublist-item">
-									<a href="#">Масла и смазки</a>
-								</li>
-								<li class="menu-catalog__sublist-item">
-									<a href="#">Автохимия профессиональная</a>
-								</li>
-								<li class="menu-catalog__sublist-item">
-									<a href="#">Велосипедная программа</a>
-								</li>
-								<li class="menu-catalog__sublist-item">
-									<a href="#">Масла и смазки</a>
-								</li>
-								<li class="menu-catalog__sublist-item">
-									<a href="#">Автохимия профессиональная</a>
-								</li>
-								<li class="menu-catalog__sublist-item">
-									<a href="#">Велосипедная программа</a>
+								<li class="menu-catalog__item">
+									<a class="menu-catalog__name" href="#">Каталог Meguin</a>
 								</li>
 							</ul>
-							<div class="menu-catalog__product-info">
-								<img src="img/liqui-moly-logo.jpg" alt="Логотип компании-производителя">
-								<p>Liqui Moly – одна из ведущих компаний по производству автохимии, присадок, автокосметики, моторных и трансмиссионных масел премиум качества.</p>
-							</div>
-						</li>
-						<li class="menu-catalog__item">
-							<a class="menu-catalog__name" href="#">Каталог Texaco</a>
-						</li>
-						<li class="menu-catalog__item">
-							<a class="menu-catalog__name" href="#">Каталог Sentoil</a>
-						</li>
-						<li class="menu-catalog__item">
-							<a class="menu-catalog__name" href="#">Каталог Meguin</a>
-						</li>
-					</ul>
-				</div>
-				<ul class="main-menu__list">
-					<li class="main-menu__item">
+						</div>
+					</li>
+				</ul>
+				<button class="menu__list-toggler">
+					Меню
+				</button>
+				<ul class="menu__list">
+					<li class="menu__item">
 						<a href="#">Цены</a>
 					</li>
-					<li class="main-menu__item">
+					<li class="menu__item">
 						<a href="#">Партнеры</a>
 					</li>
-					<li class="main-menu__item">
+					<li class="menu__item">
 						<a href="#">Доставка и оплата</a>
 					</li>
-					<li class="main-menu__item">
+					<li class="menu__item">
 						<a href="#">Контакты</a>
 					</li>
-					<li class="main-menu__item">
+					<li class="menu__item">
 						<a href="#">Нефтепродукты</a>
 					</li>
-					<li class="main-menu__item">
+					<li class="menu__item">
 						<a href="#">Компания</a>
 					</li>
-					<li class="main-menu__item">
+					<li class="menu__item">
 						<a href="#">Блог</a>
 					</li>
 				</ul>
@@ -226,8 +287,8 @@
 	</header>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/jquery.smartmenus.min.js"></script>
-	<script src="js/main.min.js"></script>
+  <script src="js/jquery.smartmenus.min.js" type="text/javascript"></script>
+	<script src="js/main.min.js" type="text/javascript"></script>
 
 	</body>
 </html>
