@@ -278,13 +278,15 @@ NAV
   height: 19px;
   border: none;
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 0;
   background-color: transparent;
   background-image: url(../img/icon-mobile-menu.svg); }
   .nav__toggler--close {
     width: 19px;
     background-image: url(../img/icon-close.svg); }
+  .nav__toggler:focus {
+    outline: none; }
 
 /*RESPONSIVE*/
 @media screen and (min-width: 768px) {
@@ -493,7 +495,7 @@ MENU
   .menu__list {
     display: none;
     flex-direction: column;
-    max-width: 250px;
+    width: 100%;
     margin: 0 auto;
     border: 1px solid #e1e1e1;
     border-top: none;
@@ -688,7 +690,7 @@ MENU CATALOG
     .menu-catalog__title::before {
       display: none; }
   .menu-catalog__list-wrapper {
-    max-width: 250px;
+    width: 100%;
     margin: 0 auto;
     position: static;
     left: 0;

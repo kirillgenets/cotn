@@ -15,7 +15,6 @@ navToggler.addEventListener('click', function () {
 
 menuToggler.addEventListener('click', function () {
 	menuList.classList.toggle('menu__list--shown');
-	console.log(menuList.className);
 });
 
 var wrapperWidth = 1170;
@@ -27,8 +26,6 @@ window.addEventListener('resize', function () {
 	} else {
 		wrapperWidth = 1170;
 	}
-
-	console.log(wrapperWidth);
 
 });
 
