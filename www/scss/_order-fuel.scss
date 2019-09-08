@@ -156,3 +156,79 @@ ORDER FUEL
 	}
 
 }
+
+@media screen and (max-width: 1200px) {
+
+	.order-fuel__main {
+		flex-direction: column;
+
+		width: 305px;
+		margin-bottom: 20px;
+	}
+
+	.order-fuel__list {
+		width: 305px;
+		margin-bottom: 10px;
+	}
+
+	.order-fuel__field {
+		width: 150px;
+		padding: 10px;
+	}
+
+	.order-fuel__submit {
+		width: 150px;
+		box-sizing: border-box;
+		padding: 10px;
+
+		font-size: 11px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.order-fuel {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.order-fuel__main {
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	.order-fuel__submit {
+		margin: 0 auto;
+	}
+
+	.order-fuel__agree {
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	.order-fuel__main {
+		width: 245px;
+	}
+
+	.order-fuel__list {
+		width: 245px;
+	}
+
+	.order-fuel__field {
+		width: 120px;
+	}
+
+	.order-fuel__agree-label {
+		font-size: 12px;
+
+		&::before {
+			top: -3px;
+		}
+
+	}
+
+}
