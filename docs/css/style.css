@@ -707,3 +707,127 @@ MENU CATALOG
     border-top: 1px solid #e1e1e1; }
   .menu-catalog__item--parent .menu-catalog__name::after {
     display: none; } }
+
+/*****
+INTRO
+*****/
+.intro {
+  background: radial-gradient(circle, white 60%, #e0e0e0 100%); }
+
+.intro__wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 100px; }
+
+.intro__title {
+  width: 570px;
+  margin: 0 0 30px 0;
+  font-family: "Francker Light", Tahoma, sans-serif;
+  font-size: 56px;
+  font-weight: 200;
+  line-height: 1.177; }
+
+.intro__subtitle {
+  width: 395px;
+  margin: 0 0 50px 0;
+  font-family: #fr-l;
+  font-size: 14px;
+  line-height: 1.714; }
+
+/**********
+ORDER FUEL
+**********/
+.order-fuel {
+  width: 570px; }
+
+.order-fuel__main {
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+  margin-bottom: 50px; }
+
+.order-fuel__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 365px;
+  margin: 0;
+  padding: 0; }
+
+.order-fuel__item {
+  position: relative; }
+
+.order-fuel__field {
+  width: 180px;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #ebebeb;
+  font-family: "Francker Semibold", Tahoma, sans-serif;
+  font-size: 14px;
+  transition: 0.3s; }
+  .order-fuel__field::-webkit-input-placeholder {
+    font-family: "Francker Light", Tahoma, sans-serif; }
+  .order-fuel__field:-moz-placeholder {
+    font-family: "Francker Light", Tahoma, sans-serif; }
+  .order-fuel__field:focus {
+    outline: none; }
+
+.order-fuel__focus-line {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background-color: #442e3f;
+  opacity: 0;
+  transition: 0.3s; }
+
+.order-fuel__field:focus + .order-fuel__focus-line {
+  opacity: 1; }
+
+.order-fuel__submit {
+  width: 200px;
+  border: none;
+  background-color: rgba(68, 46, 63, 0.9);
+  font-family: "Francker Semibold", Tahoma, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s; }
+  .order-fuel__submit:focus {
+    outline: none; }
+
+.order-fuel__agree-label {
+  padding-left: 30px;
+  position: relative;
+  font-family: "Francker Light", Tahoma, sans-serif;
+  font-size: 14px;
+  color: #1a2d4a;
+  cursor: pointer; }
+  .order-fuel__agree-label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid #c2c2c2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #f1f1f1;
+    cursor: pointer; }
+
+.order-fuel__agree-input:checked + .order-fuel__agree-label::before {
+  background-image: url(../img/icon-tick.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 768px) {
+  .order-fuel__field:hover {
+    border-color: #000; }
+  .order-fuel__submit:hover {
+    opacity: 0.8; }
+  .order-fuel__submit:active {
+    opacity: 0.6; } }

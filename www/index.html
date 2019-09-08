@@ -289,44 +289,50 @@
 	<main>
 
 		<section class="intro">
-			<div class="intro__info">
-				<h1 class="intro__title">
-					Оптовые поставки дизельного топлива и нефтепродуктов
-				</h1>
-				<p class="intro__subtitle">
-					Мы предлагаем нашим покупателям дизельное топливо только самого высокого качества.
-				</p>
-				<form class="intro__form" action="">
-					<h2 class="visually-hidden">
-						Заполните форму, чтобы сделать заказ топлива
+			<div class="intro__wrapper">
+				<div class="intro__info">
+					<h1 class="intro__title">
+						Оптовые поставки дизельного топлива и нефтепродуктов
+					</h1>
+					<p class="intro__subtitle">
+						Мы предлагаем нашим покупателям дизельное топливо только самого высокого качества.
+					</p>
+					<form class="order-fuel" action="">
+						<h2 class="visually-hidden">
+							Заполните форму, чтобы сделать заказ топлива
+						</h2>
+						<div class="order-fuel__main">
+							<ul class="order-fuel__list">
+								<li class="order-fuel__item">
+									<label class="visually-hidden" for="order-fuel-name">
+										Напишите Ваше имя
+									</label>
+									<input class="order-fuel__field" id="order-fuel-name" name="order-fuel-name" type="text" placeholder="Ваше имя">
+									<div class="order-fuel__focus-line"></div>
+								</li>
+								<li class="order-fuel__item">
+									<label class="visually-hidden" for="order-fuel-phone">
+										Напишите Ваше имя
+									</label>
+									<input class="order-fuel__field" id="order-fuel-phone" name="order-fuel-phone" type="tel" placeholder="Ваш телефон">
+									<div class="order-fuel__focus-line"></div>
+								</li>
+							</ul>
+							<button class="order-fuel__submit" type="submit">
+								Заказать топливо
+							</button>
+						</div>
+						<div class="order-fuel__agree">
+							<input class="order-fuel__agree-input visually-hidden" id="order-fuel-agree" name="order-fuel-agree" type="checkbox">
+							<label class="order-fuel__agree-label" for="order-fuel-agree">Согласен с условиями обработки данных</label>
+						</div>
+					</form>
+				</div>
+				<div class="intro__preview">
+					<h2 class="intro__preview-advantage">
+						<span class="intro__preview-number">1000 +</span><span class="intro__preview-description">литров топлива доставляем в день заказа</span>
 					</h2>
-					<ul class="intro__form-list">
-						<li class="into__form-item">
-							<label class="visually-hidden" for="order-name">
-								Напишите Ваше имя
-							</label>
-							<input class="intro__field" id="order-name" name="order-name" type="text" placeholder="Ваше имя">
-						</li>
-						<li class="into__form-item">
-							<label class="visually-hidden" for="order-phone">
-								Напишите Ваше имя
-							</label>
-							<input class="intro__field" id="order-phone" name="order-phone" type="tel" placeholder="Ваш телефон">
-						</li>
-					</ul>
-					<button class="intro__submit" type="submit">
-						Заказать топливо
-					</button>
-					<div class="into__form-agree">
-						<input class="intro__form-agree-input" id="order-agree" name="order-agree" type="checkbox">
-						<label class="intro__form-agree-label" for="order-agree">Согласен с условиями обработки данных</label>
-					</div>
-				</form>
-			</div>
-			<div class="intro__preview">
-				<h2 class="intro__preview-advantage">
-					<span class="intro__preview-number">1000 +</span><span class="intro__preview-description">литров топлива доставляем в день заказа</span>
-				</h2>
+				</div>
 			</div>
 		</section>
 
