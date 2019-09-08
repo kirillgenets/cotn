@@ -149,6 +149,10 @@ HEADER
 		text-align: center;
 	}
 
+	&:focus {
+		outline: none;
+	}
+
 }
 
 /*RESPONSIVE*/

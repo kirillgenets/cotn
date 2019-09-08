@@ -181,6 +181,8 @@ HEADER
     font-size: 12px;
     font-weight: 300;
     text-align: center; }
+  .header__shop-button:focus {
+    outline: none; }
 
 /*RESPONSIVE*/
 @media screen and (min-width: 768px) {
