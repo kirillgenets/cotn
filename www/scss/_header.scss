@@ -114,47 +114,6 @@ HEADER
 	border-left: 1px solid #e1e1e1;
 }
 
-.header__shop-button {
-	width: 33px;
-	height: 29px;
-	border: none;
-
-	position: relative;
-
-	background-color: transparent;
-	background-image: url(../img/shop.png);
-
-	cursor: pointer;
-
-	transition: 0.3s;
-
-	&::after {
-		content: '2';
-
-		width: 18px;
-		height: 18px;
-		box-sizing: border-box;
-		padding-top: 1px;
-		border-radius: 50%;
-
-		position: absolute;
-		right: -15px;
-		top: -15px;
-
-		background-color: #faeaca;
-
-		font-family: $fr-l;
-		font-size: 12px;
-		font-weight: 300;
-		text-align: center;
-	}
-
-	&:focus {
-		outline: none;
-	}
-
-}
-
 /*RESPONSIVE*/
 
 @media screen and (min-width: 768px) {
@@ -193,22 +152,6 @@ HEADER
 
 		&:active {
 			opacity: 0.5;
-		}
-
-		&:focus {
-			outline: none;
-		}
-
-	}
-
-	.header__shop-button {
-
-		&:hover {
-			opacity: 0.8;
-		}
-
-		&:active {
-			opacity: 0.6;
 		}
 
 		&:focus {
