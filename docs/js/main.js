@@ -7,6 +7,12 @@ var navToggler = document.querySelector('.nav__toggler');
 var navList = document.querySelector('.nav__list');
 var menuToggler = document.querySelector('.menu__list-toggler');
 var menuList = document.querySelector('.menu__list');
+var shopToggler = document.querySelector('.shopping-cart__button');
+var shoppingCart = document.querySelector('.shopping-cart__wrapper');
+
+shopToggler.addEventListener('click', function() {
+	shoppingCart.classList.toggle('shopping-cart__wrapper--shown');
+})
 
 navToggler.addEventListener('click', function () {
 	navList.classList.toggle('nav__list--shown');
