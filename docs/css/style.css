@@ -1178,3 +1178,64 @@ ORDER FUEL
     font-size: 12px; }
     .order-fuel__agree-label::before {
       top: -3px; } }
+
+/******
+QUOTES
+******/
+.quotes__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 55px 0 25px 0; }
+
+.quotes__item {
+  width: 200px;
+  box-sizing: border-box;
+  margin-bottom: 30px; }
+
+.quotes__item a {
+  padding-left: 30px;
+  position: relative;
+  font-family: "Francker Semibold", Tahoma, sans-serif;
+  font-size: 12px;
+  color: #110c10;
+  text-transform: uppercase;
+  transition: 0.3s; }
+  .quotes__item a:before {
+    content: '';
+    width: 9px;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background-image: url(../img/right-arrows-two.png); }
+
+@media screen and (min-width: 768px) {
+  .quotes__item a:hover {
+    opacity: 0.8; }
+  .quotes__item a:active {
+    opacity: 0.6; } }
+
+@media screen and (max-width: 1200px) {
+  .quotes__list {
+    width: 768px;
+    padding: 20px 0 10px 0; }
+  .quotes__item {
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 800px) {
+  .quotes__list {
+    width: 480px; }
+  .quotes__item {
+    width: 130px;
+    margin-bottom: 0; }
+  .quotes__item a {
+    padding-left: 15px;
+    font-size: 10px; } }
+
+@media screen and (max-width: 520px) {
+  .quotes__list {
+    width: 300px; } }

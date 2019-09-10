@@ -1,5 +1,5 @@
 var chosenCity = document.querySelector('.cities__chosen-city');
-var citiesList = document.querySelector('.cities__list');
+var citiesList = $('.cities__list');
 var menuCatalogTitle = document.querySelector('.menu-catalog__title');
 var menuCatalogList = document.querySelector('.menu-catalog__list');
 var menuCatalogListWrapper = document.querySelector('.menu-catalog__list-wrapper');
@@ -8,10 +8,16 @@ var navList = document.querySelector('.nav__list');
 var menuToggler = document.querySelector('.menu__list-toggler');
 var menuList = document.querySelector('.menu__list');
 var shopToggler = document.querySelector('.shopping-cart__button');
-var shoppingCart = document.querySelector('.shopping-cart__wrapper');
+var shoppingCart = $('.shopping-cart__wrapper');
 
 shopToggler.addEventListener('click', function() {
-	shoppingCart.classList.toggle('shopping-cart__wrapper--shown');
+
+	if (shoppingCart.css('display') === 'none') {
+		shoppingCart.slideDown(600);
+	} else {
+		shoppingCart.hide('fast')
+	}
+
 })
 
 navToggler.addEventListener('click', function () {
@@ -40,7 +46,7 @@ chosenCity.addEventListener('mousedown', function (evt) {
 	evt.preventDefault();
 });
 
-citiesList.addEventListener('click', onCitiesListClick);
+citiesList.click(onCitiesListClick);
 
 menuCatalogTitle.addEventListener('click', onMenuCatalogTitleClick);
 
@@ -53,7 +59,7 @@ function onChosenCityClick() {
 function onCitiesListClick(evt) {
 
 	setNewCity(evt.target.textContent);
-	citiesList.classList.add('hidden');
+	citiesList.hide('fast');
 
 }
 
@@ -124,7 +130,11 @@ function showMenuCatalog() {
 
 function showCitiesList() {
 
-	citiesList.classList.toggle('hidden');
+	if (citiesList.css('display') === 'none') {
+		citiesList.slideDown('fast');
+	} else {
+		citiesList.hide('fast')
+	}
 
 }
 
