@@ -129,8 +129,10 @@ SHOPPING CART
 }
 
 .shopping-cart__item-img img {
-	width: 41px;
-	height: 63px;
+	max-width: 41px;
+	max-height: 63px;
+	min-width: 41px;
+	min-height: 63px;
 
 	transition: 0.3s;
 }
