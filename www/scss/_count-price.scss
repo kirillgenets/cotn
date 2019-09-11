@@ -1,0 +1,65 @@
+/***********
+COUNT PRICE
+***********/
+
+.count-price {
+	padding-top: 50px;
+	padding-bottom: 150px;
+}
+
+.count-price__title {
+	margin-top: 0;
+	margin-bottom: 35px;
+
+	font-size: 48px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.count-price__description {
+	margin-top: 0;
+	margin-bottom: 60px;
+
+	font-family: $proxima;
+	font-size: 16px;
+	text-align: center;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 800px) {
+
+	.count-price {
+		padding-top: 30px;
+		padding-bottom: 80px;
+	}
+
+	.count-price__title {
+		margin-bottom: 15px;
+
+		font-size: 36px;
+	}
+
+	.count-price__description {
+		margin-bottom: 20px;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	.count-price {
+		padding-bottom: 50px;
+	}
+
+	.count-price__title {
+		margin-bottom: 5px;
+
+		font-size: 24px;
+	}
+
+	.count-price__description {
+		font-size: 12px;
+	}
+
+}
