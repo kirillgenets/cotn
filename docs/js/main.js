@@ -66,7 +66,7 @@ function onCalcButtonClick() {
 	if (productType != undefined && deliveryType != undefined && amountType != undefined && feeType != undefined) {
 		amount.textContent = amountType.value;
 		literPrice.textContent = productType.value.replace('.',',');
-		calcValue.textContent = (+productType.value + +deliveryType.value + +feeType.value) * +amountType.value;
+		calcValue.textContent = ((+productType.value + +deliveryType.value + +feeType.value) * +amountType.value).toFixed(0);
 	}
 
 	function getCheckedRadio(name) {

@@ -1300,7 +1300,7 @@ INDEX CATALOG
   height: 14px;
   left: 25px;
   top: 48%;
-  background-image: url(../img/drop.png);
+  background-image: url(../img/drop.svg);
   transform: translateY(-50%); }
 
 .index-catalog__tab--oil button::before {
@@ -1308,7 +1308,7 @@ INDEX CATALOG
   height: 21px;
   left: 45px;
   top: 45%;
-  background-image: url(../img/oil.png);
+  background-image: url(../img/oil.svg);
   transform: translateY(-50%); }
 
 .index-catalog__tab--selected button {
