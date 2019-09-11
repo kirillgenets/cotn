@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /********************
 SPECIFICATION
 ********************/
@@ -118,7 +119,7 @@ HEADER
   right: 15px;
   top: 50%;
   background-color: transparent;
-  background-image: url(../img/magnifying-glass.png);
+  background-image: url(../img/magnifying-glass.svg);
   transform: translateY(-50%);
   cursor: pointer; }
 
@@ -224,7 +225,9 @@ SHOPPING CART
   border: none;
   position: relative;
   background-color: transparent;
-  background-image: url(../img/shop.png);
+  background-image: url(../img/shop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   cursor: pointer;
   transition: 0.3s; }
   .shopping-cart__button::after {
@@ -519,12 +522,13 @@ CITIES
   transition: 0.3s; }
   .cities__chosen-city::before {
     content: '';
-    width: 12px;
-    height: 15px;
+    width: 16px;
+    height: 18px;
     position: absolute;
     left: 0;
     top: 50%;
-    background-image: url(../img/place.png);
+    background-image: url(../img/place.svg);
+    background-repeat: no-repeat;
     background-size: 100%;
     transform: translateY(-50%); }
   .cities__chosen-city::after {
@@ -577,8 +581,8 @@ CITIES
     padding: 0 15px;
     font-size: 11px; }
     .cities__chosen-city::before {
-      width: 8px;
-      height: 10px;
+      width: 12px;
+      height: 16px;
       background-repeat: no-repeat; }
     .cities__chosen-city::after {
       width: 8px;
@@ -592,7 +596,7 @@ CITIES
     font-size: 12px; }
     .cities__chosen-city::before {
       width: 12px;
-      height: 15px; }
+      height: 16px; }
     .cities__chosen-city::after {
       width: 11px;
       height: 7px; } }
@@ -958,7 +962,8 @@ INTRO
     left: -100px;
     top: 50%;
     background-color: #fff;
-    background-image: url(../img/drop-three.png);
+    background-image: url(../img/drop-three.svg);
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
     transform: translateY(-50%); }
@@ -1209,14 +1214,15 @@ QUOTES
   white-space: nowrap;
   transition: 0.3s; }
   .quotes__item a:before {
-    content: '';
-    width: 9px;
-    height: 7px;
+    content: '»';
     position: absolute;
-    left: 0;
-    top: 2px;
-    background-image: url(../img/right-arrows-two.png); }
+    left: 10px;
+    top: -5px;
+    font-family: 'Tahoma', sans-serif;
+    font-weight: 500;
+    font-size: 18px; }
 
+/*RESPONSIVE*/
 @media screen and (min-width: 768px) {
   .quotes__item a:hover {
     opacity: 0.8; }
@@ -1238,7 +1244,11 @@ QUOTES
     margin-bottom: 0; }
   .quotes__item a {
     padding-left: 15px;
-    font-size: 10px; } }
+    font-size: 10px; }
+    .quotes__item a::before {
+      left: 0;
+      top: -4px;
+      font-size: 14px; } }
 
 @media screen and (max-width: 520px) {
   .quotes__list {

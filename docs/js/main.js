@@ -13,7 +13,7 @@ var shoppingCart = $('.shopping-cart__wrapper');
 shopToggler.addEventListener('click', function() {
 
 	if (shoppingCart.css('display') === 'none') {
-		shoppingCart.slideDown(600);
+		shoppingCart.slideDown(200);
 	} else {
 		shoppingCart.hide('fast')
 	}

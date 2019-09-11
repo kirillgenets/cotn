@@ -26,14 +26,15 @@ CITIES
 	&::before {
 		content: '';
 
-		width: 12px;
-		height: 15px;
+		width: 16px;
+		height: 18px;
 
 		position: absolute;
 		left: 0;
 		top: 50%;
 
-		background-image: url(../img/place.png);
+		background-image: url(../img/place.svg);
+		background-repeat: no-repeat;
 		background-size: 100%;
 
 		transform: translateY(-50%);
@@ -131,8 +132,8 @@ CITIES
 		font-size: 11px;
 
 		&::before {
-			width: 8px;
-			height: 10px;
+			width: 12px;
+			height: 16px;
 
 			background-repeat: no-repeat;
 		}
@@ -159,7 +160,7 @@ CITIES
 
 		&::before {
 			width: 12px;
-			height: 15px;
+			height: 16px;
 		}
 
 		&::after {

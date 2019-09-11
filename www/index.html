@@ -647,6 +647,64 @@
 			</ul>
 		</section>
 
+		<section class="count-price">
+			<h2 class="count-price__title">
+				Калькулятор расчета топлива:
+			</h2>
+			<p class="count-price__description">
+				Рассчитайте стоимость топлива и доставки
+			</p>
+			<div class="calc">
+				<ul class="calc__selection">
+					<li class="calc__product-type">
+						<h3 class="calc__heading">Какая продукция нужна?</h3>
+						<ul class="calc__product-type-list">
+							<li class="calc__product-type-item">
+								<input type="radio" name="product-type" id="diesel" value="34,20">
+								<label for="diesel">Дизельное топливо</label>
+							</li>
+							<li class="calc__product-type-item">
+								<input type="radio" name="product-type" id="diesel-analog" value="38,20">
+								<label for="diesel-analog">Аналог дизельного топлива</label>
+							</li>
+							<li class="calc__product-type-item">
+								<input type="radio" name="product-type" id="gasoline-95" value="30,20">
+								<label for="gasoline-95">Бензин АИ-95</label>
+							</li>
+							<li class="calc__product-type-item">
+								<input type="radio" name="product-type" id="gasoline-92" value="28,20">
+								<label for="gasoline-92">Бензин АИ-92</label>
+							</li>
+						</ul>
+					</li>
+					<li class="calc__delivery-type">
+						<h3 class="calc__heading">Выберите тип доставки:</h3>
+						<ul class="calc__delivery-type-list">
+							<li class="calc__delivery-type-item">
+								<input type="radio" name="delivery-type" id="moscow" value="100">
+								<label for="moscow">Москва и МО</label>
+							</li>
+							<li class="calc__delivery-type-item">
+								<input type="radio" name="delivery-type" id="russia" value="140">
+								<label for="russia">По РФ</label>
+							</li>
+							<li class="calc__delivery-type-item">
+								<input type="radio" name="delivery-type" id="pickup" value="0">
+								<label for="pickup">Самовывоз</label>
+							</li>
+						</ul>
+					</li>
+					<li class="calc__adress">
+						<h3 class="calc__heading">Укажите адрес доставки:</h3>
+						<input type="text" placeholder="Куда нужно доставить топливо">
+					</li>
+				</ul>
+				<div class="calc__info">
+
+				</div>
+			</div>
+		</section>
+
 	</main>
 
 	<script
