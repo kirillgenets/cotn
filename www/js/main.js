@@ -9,6 +9,12 @@ var menuToggler = document.querySelector('.menu__list-toggler');
 var menuList = document.querySelector('.menu__list');
 var shopToggler = document.querySelector('.shopping-cart__button');
 var shoppingCart = $('.shopping-cart__wrapper');
+var calcButton = document.querySelector('.calc__total-count');
+var calcValue = document.querySelector('.calc__total-value');
+var amount = document.querySelector('.calc__indicator--amount .calc__indicator-value');
+var literPrice = document.querySelector('.calc__indicator--liter-price .calc__indicator-value');
+
+calcButton.addEventListener('click', onCalcButtonClick);
 
 shopToggler.addEventListener('click', function() {
 
@@ -49,6 +55,35 @@ chosenCity.addEventListener('mousedown', function (evt) {
 citiesList.click(onCitiesListClick);
 
 menuCatalogTitle.addEventListener('click', onMenuCatalogTitleClick);
+
+function onCalcButtonClick() {
+
+	var productType = getCheckedRadio('product-type');
+	var deliveryType = getCheckedRadio('delivery-type');
+	var amountType = getCheckedRadio('amount-type');
+	var feeType = getCheckedRadio('fee-type');
+
+	if (productType != undefined && deliveryType != undefined && amountType != undefined && feeType != undefined) {
+		amount.textContent = amountType.value;
+		literPrice.textContent = productType.value.replace('.',',');
+		calcValue.textContent = (+productType.value + +deliveryType.value + +feeType.value) * +amountType.value;
+	}
+
+	function getCheckedRadio(name) {
+
+		var radios = document.getElementsByName(name);
+
+    for (var i = 0; i < radios.length; i++) {
+
+      if (radios[i].type == "radio" && radios[i].checked) {
+        return radios[i];
+      }
+
+    }
+
+	}
+
+}
 
 function onChosenCityClick() {
 
