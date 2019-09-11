@@ -1,0 +1,185 @@
+/*************
+INDEX CATALOG
+*************/
+
+.index-catalog__title {
+	margin-top: 20px;
+	margin-bottom: 45px;
+
+	font-size: 48px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.index-catalog__tabs-list {
+	display: flex;
+
+	list-style: none;
+
+	width: 410px;
+	margin: 0 auto 45px;
+	padding: 0;
+}
+
+.index-catalog__tab button {
+	width: 205px;
+	padding: 20px 0;
+	border: none;
+
+	position: relative;
+
+	background-color: #eaeaea;
+
+	font-family: $fr-smb;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: $dark-purple;
+
+	cursor: pointer;
+
+	transition: 0.3s;
+
+	&:focus {
+		outline: none;
+	}
+
+	&::before {
+		content: '';
+
+		position: absolute;
+
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+}
+
+.index-catalog__tab--petroleum button {
+
+	&::before {
+		width: 11px;
+		height: 14px;
+
+		left: 25px;
+		top: 48%;
+
+		background-image: url(../img/drop.png);
+
+		transform: translateY(-50%);
+	}
+
+}
+
+.index-catalog__tab--oil button {
+
+	&::before {
+		width: 19px;
+		height: 21px;
+
+		left: 45px;
+		top: 45%;
+
+		background-image: url(../img/oil.png);
+
+		transform: translateY(-50%);
+	}
+
+}
+
+.index-catalog__tab--selected button {
+	background-color: $purple;
+
+	color: #fff;
+}
+
+.index-catalog__goods {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	list-style: none;
+
+	width: 1170px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 768px) {
+
+	.index-catalog__tab button {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+	.index-catalog__title {
+		margin-bottom: 25px;
+
+		font-size: 36px;
+	}
+
+	.index-catalog__tabs-list {
+		width: 390px;
+	}
+
+	.index-catalog__tab button {
+		width: 195px;
+    padding: 15px 0;
+	}
+
+	.index-catalog__goods {
+		width: 768px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.index-catalog__title {
+		margin-bottom: 15px;
+
+		font-size: 28px;
+	}
+
+	.index-catalog__tabs-list {
+		flex-direction: column;
+
+		width: 195px;
+		margin-bottom: 25px;
+	}
+
+	.index-catalog__goods {
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+
+		width: 480px;
+
+		overflow-x: scroll;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	.index-catalog__title {
+		font-size: 24px;
+	}
+
+	.index-catalog__goods {
+		width: 300px;
+	}
+
+}
