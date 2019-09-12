@@ -60,3 +60,21 @@ input[type="radio"].visually-hidden {
 .hidden {
   display: none;
 }
+
+.rubble {
+	position: relative;
+
+	&::before {
+		content: '';
+
+		width: 60%;
+		height: 0.075em;
+
+		position: absolute;
+		left: 0;
+		top: 60%;
+
+		background-color: $dark-purple;
+	}
+
+}

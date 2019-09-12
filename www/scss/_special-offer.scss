@@ -1,0 +1,108 @@
+/*************
+SPECIAL OFFER
+*************/
+
+.special-offer {
+	padding-top: 70px;
+	padding-bottom: 60px;
+
+	background: rgb(29,21,27);
+	background: linear-gradient(110deg, rgba(29,21,27,1) 50%, rgba(255,255,255,0) 50%), linear-gradient(114deg, rgba(64,43,59,0.95) 0%, rgba(64,43,59,0.95) 100%), url(../img/fuel.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+
+	color: #fff;
+}
+
+.special-offer__wrapper {
+	display: flex;
+	align-items: center;
+
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.special-offer__title {
+	margin-top: 0;
+	margin-bottom: 35px;
+
+	font-family: $fr-reg;
+	font-size: 48px;
+	font-weight: 300;
+}
+
+.special-offer__description {
+	width: 315px;
+	margin-top: 0;
+	margin-bottom: 60px;
+
+	font-family: $fr-l;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 1.7;
+}
+
+.special-offer__condition {
+	margin-top: 0;
+	margin-bottom: 60px;
+
+	font-family: $fr-l;
+	font-size: 34px;
+	font-weight: 200;
+}
+
+.special-offer__buttons-list {
+	display: flex;
+
+	list-style: none;
+
+	width: 395px;
+	margin: 0;
+	padding: 0;
+}
+
+.special-offer__button {
+	margin-right: 10px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+}
+
+.special-offer__button a {
+	display: block;
+
+	box-sizing: border-box;
+	padding: 20px 34px;
+	border: 1px solid #fff;
+
+	background-color: transparent;
+
+	font-family: $fr-smb;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+
+	transition: 0.3s;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 768px) {
+
+	.special-offer__button a {
+
+		&:hover {
+			background-color: #fff;
+
+			color: $dark-purple;
+		}
+
+		&:active {
+			opacity: 0.8;
+		}
+
+	}
+
+}
