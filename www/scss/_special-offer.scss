@@ -3,11 +3,11 @@ SPECIAL OFFER
 *************/
 
 .special-offer {
-	padding-top: 70px;
-	padding-bottom: 60px;
+	padding-top: 110px;
+	padding-bottom: 100px;
 
 	background: rgb(29,21,27);
-	background: linear-gradient(110deg, rgba(29,21,27,1) 50%, rgba(255,255,255,0) 50%), linear-gradient(114deg, rgba(64,43,59,0.95) 0%, rgba(64,43,59,0.95) 100%), url(../img/fuel.png);
+	background: linear-gradient(110deg, rgba(29,21,27,1) 55%, rgba(255,255,255,0) 55%), linear-gradient(114deg, rgba(64,43,59,0.95) 0%, rgba(64,43,59,0.95) 100%), url(../img/fuel.png);
 	background-repeat: no-repeat;
 	background-position: right center;
 
@@ -16,10 +16,13 @@ SPECIAL OFFER
 
 .special-offer__wrapper {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
+	justify-content: space-between;
 
 	width: 1170px;
 	margin: 0 auto;
+
+	position: relative;
 }
 
 .special-offer__title {
@@ -85,6 +88,42 @@ SPECIAL OFFER
 	color: #fff;
 
 	transition: 0.3s;
+}
+
+.special-offer__preview {
+	padding-right: 60px;
+}
+
+.special-offer__img {
+	position: absolute;
+	left: 455px;
+	top: 50%;
+
+	transform: translateY(-50%);
+}
+
+.special-offer__new-price {
+	margin-top: 0;
+	margin-bottom: 40px;
+
+	font-size: 36px;
+}
+
+.special-offer__price-value {
+	font-family: $fr-l;
+	font-size: 99px;
+	font-weight: 200;
+}
+
+.special-offer__old-price {
+	margin: 0;
+
+	font-family: $fr-l;
+	font-size: 30px;
+	font-weight: 200;
+	text-transform: uppercase;
+
+	opacity: 0.3;
 }
 
 /*RESPONSIVE*/
