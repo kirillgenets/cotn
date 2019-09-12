@@ -114,7 +114,7 @@ function initCalc() {
 
 	function countTotal(productPrice, deliveryPrice, amount) {
 
-		return (+productPrice + +deliveryPrice) * +amount;
+		return Math.round((+productPrice + +deliveryPrice) * +amount);
 
 	}
 
