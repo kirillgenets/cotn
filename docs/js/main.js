@@ -9,14 +9,10 @@ var menuToggler = document.querySelector('.menu__list-toggler');
 var menuList = document.querySelector('.menu__list');
 var shopToggler = document.querySelector('.shopping-cart__button');
 var shoppingCart = $('.shopping-cart__wrapper');
-var calcButton = document.querySelector('.calc__total-count');
-var calcValue = document.querySelector('.calc__total-value');
-var amount = document.querySelector('.calc__indicator--amount .calc__indicator-value');
-var literPrice = document.querySelector('.calc__indicator--liter-price .calc__indicator-value');
 
-calcButton.addEventListener('click', onCalcButtonClick);
+initCalc();
 
-shopToggler.addEventListener('click', function() {
+shopToggler.addEventListener('click', function () {
 
 	if (shoppingCart.css('display') === 'none') {
 		shoppingCart.slideDown(200);
@@ -56,30 +52,69 @@ citiesList.click(onCitiesListClick);
 
 menuCatalogTitle.addEventListener('click', onMenuCatalogTitleClick);
 
-function onCalcButtonClick() {
+function initCalc() {
 
-	var productType = getCheckedRadio('product-type');
-	var deliveryType = getCheckedRadio('delivery-type');
-	var amountType = getCheckedRadio('amount-type');
-	var feeType = getCheckedRadio('fee-type');
+	var calc = document.querySelector('.calc');
+	var calcTotal = calc.querySelector('.calc__total-value');
+	var amount = document.querySelector('.calc__indicator--amount .calc__indicator-value');
+	var literPrice = document.querySelector('.calc__indicator--liter-price .calc__indicator-value');
+	var amountInfo = document.querySelector('.calc__indicator--amount .calc__indicator-value');
 
-	if (productType != undefined && deliveryType != undefined && amountType != undefined && feeType != undefined) {
-		amount.textContent = amountType.value;
-		literPrice.textContent = productType.value.replace('.',',');
-		calcValue.textContent = ((+productType.value + +deliveryType.value + +feeType.value) * +amountType.value).toFixed(0);
-	}
+	var productType = document.getElementsByName('product-type');
+	var deliveryType = document.getElementsByName('delivery-type');
+	var amountType = document.getElementsByName('amount-type');
 
-	function getCheckedRadio(name) {
+	var productPrice = 0;
+	var deliveryPrice = 0;
+	var amount = 1;
 
-		var radios = document.getElementsByName(name);
+	productType.forEach(function (item) {
 
-    for (var i = 0; i < radios.length; i++) {
+		item.addEventListener('change', function (evt) {
 
-      if (radios[i].type == "radio" && radios[i].checked) {
-        return radios[i];
-      }
+			productPrice = item.value;
+			literPrice.textContent = item.value.replace('.',',');
 
-    }
+			if (getCheckedRadio('product-type') != undefined && getCheckedRadio('delivery-type') != undefined && getCheckedRadio('amount-type') != undefined) {
+				calcTotal.textContent = countTotal(productPrice, deliveryPrice, amount);
+			}
+
+		});
+
+	});
+
+	deliveryType.forEach(function (item) {
+
+		item.addEventListener('change', function (evt) {
+
+			deliveryPrice = item.value;
+
+			if (getCheckedRadio('product-type') != undefined && getCheckedRadio('delivery-type') != undefined && getCheckedRadio('amount-type') != undefined) {
+				calcTotal.textContent = countTotal(productPrice, deliveryPrice, amount);
+			}
+
+		});
+
+	});
+
+	amountType.forEach(function (item) {
+
+		item.addEventListener('change', function (evt) {
+
+			amount = item.value;
+			amountInfo.textContent = item.value;
+
+			if (getCheckedRadio('product-type') != undefined && getCheckedRadio('delivery-type') != undefined && getCheckedRadio('amount-type') != undefined) {
+				calcTotal.textContent = countTotal(productPrice, deliveryPrice, amount);
+			}
+
+		});
+
+	});
+
+	function countTotal(productPrice, deliveryPrice, amount) {
+
+		return (+productPrice + +deliveryPrice) * +amount;
 
 	}
 
@@ -176,5 +211,19 @@ function showCitiesList() {
 function setNewCity(city) {
 
 	chosenCity.textContent = city;
+
+}
+
+function getCheckedRadio(name) {
+
+	var radios = document.getElementsByName(name);
+
+  for (var i = 0; i < radios.length; i++) {
+
+    if (radios[i].type == "radio" && radios[i].checked) {
+      return radios[i];
+    }
+
+  }
 
 }
