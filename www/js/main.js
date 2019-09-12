@@ -227,3 +227,40 @@ function getCheckedRadio(name) {
   }
 
 }
+
+// COMMENTS SLIDER
+
+$(document).ready(function(){
+
+	var commentsList = $('.comments__list');
+
+  commentsList.owlCarousel({
+  	items: 2,
+  	nav: true,
+  	pagination: true,
+  	responsive: {
+  		0: {
+  			items: 1,
+  		},
+  		520: {
+  			items: 2,
+  			margin: 30,
+  		},
+  		800: {
+  			items: 1,
+  		},
+  		1200: {
+  			items: 2,
+  		}
+  	}
+  });
+
+  $('.comments__prev').click(function () {
+  	commentsList.trigger('prev.owl.carousel')
+  });
+
+  $('.comments__next').click(function () {
+  	commentsList.trigger('next.owl.carousel')
+  });
+
+});
