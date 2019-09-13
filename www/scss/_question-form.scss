@@ -1,0 +1,167 @@
+/*************
+QUESTION FORM
+*************/
+
+.question-form__title {
+	margin: 0;
+	margin-bottom: 50px;
+
+	font-family: $fr-reg;
+	font-size: 32px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.question-form__wrapper {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.question-form__main {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 55px;
+}
+
+.question-form__list {
+	display: flex;
+	justify-content: space-between;
+
+	list-style: none;
+
+	width: 900px;
+	margin: 0;
+	padding: 0;
+}
+
+.question-form__item {
+	position: relative;
+}
+
+.question-form__field {
+	width: 285px;
+	box-sizing: border-box;
+	padding: 20px;
+	border: 1px solid #ebebeb;
+
+	font-family: $fr-smb;
+	font-size: 14px;
+
+	transition: 0.3s;
+
+	&::-webkit-input-placeholder {
+		font-family: $fr-l;
+	}
+
+	&::-moz-placeholder {
+		font-family: $fr-l;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+}
+
+.question-form__focus-line {
+	width: 100%;
+	height: 2px;
+
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+
+	background-color: #442e3f;
+
+	opacity: 0;
+
+	transition: 0.3s;
+}
+
+.question-form__field:focus + .question-form__focus-line {
+	opacity: 1;
+}
+
+.question-form__submit {
+	width: 210px;
+	padding: 20px 0;
+	border: none;
+
+	background-color: $purple;
+
+	font-family: $fr-smb;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+
+	transition: 0.3s;
+
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
+
+}
+
+.question-form__agree-label {
+	display: block;
+
+	width: 300px;
+	margin: 0 auto;
+	padding-left: 30px;
+
+	position: relative;
+
+	font-family: $fr-l;
+	font-size: 14px;
+	color: #1a2d4a;
+	text-align: center;
+
+	cursor: pointer;
+
+	&::before {
+		content: '';
+
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid #c2c2c2;
+
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		background-color: #f1f1f1;
+
+    cursor: pointer;
+	}
+
+}
+
+.question-form__agree-input:checked + .question-form__agree-label::before {
+	background-image: url(../img/icon-tick.svg);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 768px) {
+
+	.question-form__submit {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+
+	}
+
+}
