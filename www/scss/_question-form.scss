@@ -199,14 +199,11 @@ QUESTION FORM
 
 	.question-form__list {
 		flex-direction: column;
-
-		width: 100%;
 	}
 
 	.question-form__item {
-		display: flex;
-		justify-content: center;
-
+		width: 250px;
+		margin: 0 auto;
 		margin-bottom: 5px;
 
 		&:last-child {
@@ -222,6 +219,10 @@ QUESTION FORM
 }
 
 @media screen and (max-width: 520px) {
+
+	.question-form__item {
+		width: 230px;
+	}
 
 	.question-form__field {
 		width: 230px;

@@ -2938,11 +2938,10 @@ QUESTION FORM
 
 @media screen and (max-width: 800px) {
   .question-form__list {
-    flex-direction: column;
-    width: 100%; }
+    flex-direction: column; }
   .question-form__item {
-    display: flex;
-    justify-content: center;
+    width: 250px;
+    margin: 0 auto;
     margin-bottom: 5px; }
     .question-form__item:last-child {
       margin-bottom: 0; }
@@ -2950,6 +2949,8 @@ QUESTION FORM
     padding: 15px; } }
 
 @media screen and (max-width: 520px) {
+  .question-form__item {
+    width: 230px; }
   .question-form__field {
     width: 230px; }
   .question-form__agree-label {
