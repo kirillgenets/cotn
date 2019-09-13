@@ -241,8 +241,6 @@ $(document).ready(function(){
   commentsList.owlCarousel({
   	items: 2,
   	nav: true,
-  	mouseDrag: false,
-  	touchDrag: false,
   	pagination: true,
   	onInitialized: onCommentsSliderInitialized,
   	onTranslated: onCommentsSliderTranslated,
