@@ -233,6 +233,8 @@ function getCheckedRadio(name) {
 $(document).ready(function(){
 
 	var commentsList = $('.comments__list');
+	var commentsCounterAmount = $('.comments__counter-amount');
+	console.log(commentsCounterAmount)
 
   commentsList.owlCarousel({
   	items: 2,
@@ -241,16 +243,20 @@ $(document).ready(function(){
   	responsive: {
   		0: {
   			items: 1,
+  			slideBy: 1
   		},
   		520: {
   			items: 2,
   			margin: 30,
+  			slideBy: 2
   		},
   		800: {
   			items: 1,
+  			slideBy: 1
   		},
   		1200: {
   			items: 2,
+  			slideBy: 2
   		}
   	}
   });
