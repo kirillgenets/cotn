@@ -287,9 +287,11 @@ $(document).ready(function(){
 
   function onCommentsSliderInitialized(evt) {
 
-  	if (document.documentElement.clientWidth >= 800 && document.documentElement.clientWidth <=1200 || document.documentElement.clientWidth <=520) {
+  	if (document.documentElement.clientWidth >= 800 && document.documentElement.clientWidth <=1200) {
   		commentsCounterAmount.text(evt.item.count);
-  	} else {
+  	} else if (document.documentElement.clientWidth <=520) {
+  		commentsCounterAmount.text(evt.item.count);
+  	}	else {
   		commentsCounterAmount.text(evt.item.count - 1);
   	}
 
