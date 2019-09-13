@@ -51,11 +51,22 @@ INDEX CATALOG
 		content: '';
 
 		position: absolute;
+		top: 50%;
 
 		background-size: 100%;
 		background-repeat: no-repeat;
+
+		transform: translateY(-50%);
 	}
 
+}
+
+.index-catalog__tab-icon {
+	width: 15px;
+	height: 17px;
+
+	left: 25px;
+	top: 60%;
 }
 
 .index-catalog__tab--petroleum button {
@@ -65,11 +76,8 @@ INDEX CATALOG
 		height: 17px;
 
 		left: 25px;
-		top: 48%;
 
 		background-image: url(../img/drop.svg);
-
-		transform: translateY(-50%);
 	}
 
 }
@@ -80,12 +88,25 @@ INDEX CATALOG
 		width: 19px;
 		height: 21px;
 
-		left: 45px;
-		top: 45%;
+		left: 55px;
 
 		background-image: url(../img/oil.svg);
+	}
 
-		transform: translateY(-50%);
+}
+
+.index-catalog__tab--petroleum.index-catalog__tab--selected button {
+
+	&::before {
+		background-image: url(../img/drop-white.svg);
+	}
+
+}
+
+.index-catalog__tab--oil.index-catalog__tab--selected button {
+
+	&::before {
+		background-image: url(../img/oil-white.svg);
 	}
 
 }

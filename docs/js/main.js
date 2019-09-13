@@ -10,6 +10,18 @@ var menuList = document.querySelector('.menu__list');
 var shopToggler = document.querySelector('.shopping-cart__button');
 var shoppingCart = $('.shopping-cart__wrapper');
 
+var indexCatalogTabs = document.querySelector('.index-catalog__tabs-list');
+
+indexCatalogTabs.addEventListener('click', function (evt) {
+
+	indexCatalogTabs.querySelectorAll('.index-catalog__tab').forEach(function (item) {
+		item.classList.remove('index-catalog__tab--selected');
+	});
+
+	evt.target.parentNode.classList.add('index-catalog__tab--selected');
+
+});
+
 initCalc();
 
 shopToggler.addEventListener('click', function () {
