@@ -1,0 +1,179 @@
+/*****
+NEWS
+*****/
+
+.news {
+	width: 1170px;
+	margin: 0 auto;
+	padding-top: 85px;
+	padding-bottom: 95px;
+}
+
+.news__heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	margin-bottom: 65px;
+}
+
+.news__title {
+	margin: 0;
+
+	font-family: $fr-reg;
+	font-size: 48px;
+	font-weight: 300;
+	line-height: 1.1;
+}
+
+.news__switch {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 185px;
+}
+
+.news__counter {
+	margin: 0;
+}
+
+.news__prev, .news__next {
+	width: 12px;
+	height: 23px;
+	margin: 0;
+	padding: 0;
+	border: none;
+
+	background-color: transparent;
+
+	cursor: pointer;
+
+	transition: 0.3s;
+
+	&:focus {
+		outline: none;
+	}
+
+}
+
+.news__next {
+	transform: rotate(180deg);
+}
+
+.news__list {
+	width: 100%;
+}
+
+.news__item {
+	min-width: 360px;
+	width: 360px;
+}
+
+.news__item-img {
+	width: 360px;
+	height: 185px;
+	margin-bottom: 30px;
+}
+
+.news__item-title {
+	margin: 0;
+	margin-bottom: 30px;
+
+	font-family: $fr-reg;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.news__item-description {
+	margin: 0;
+	margin-bottom: 30px;
+
+	font-family: $fr-l;
+	font-size: 14px;
+	font-weight: 200;
+	line-height: 1.7;
+}
+
+.news__item-date {
+	margin: 0;
+
+	font-size: 13px;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 768px) {
+
+	.news__prev, .news__next {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+	.news {
+		width: 768px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.news {
+		width: 480px;
+	}
+
+	.news__list {
+		width: 288px;
+		margin: 0 auto;
+	}
+
+	.news__item {
+		max-width: 288px;
+		width: 288px;
+	}
+
+	.news__item-img {
+		max-width: 288px;
+		min-width: 288px;
+		width: 288px;
+		height: 148px;
+		margin-bottom: 10px;
+	}
+
+	.news__item-description {
+		max-width: 288px;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	.news {
+		width: 300px;
+		padding-top: 40px;
+		padding-bottom: 30px;
+	}
+
+	.news__heading {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.news__title {
+		margin-bottom: 15px;
+
+		font-size: 30px;
+	}
+
+}
