@@ -165,3 +165,72 @@ QUESTION FORM
 	}
 
 }
+
+@media screen and (max-width: 1200px) {
+
+	.question-form__title {
+		margin-bottom: 30px;
+
+		font-size: 24px;
+	}
+
+	.question-form__main {
+		flex-direction: column;
+
+		margin-bottom: 20px;
+	}
+
+	.question-form__list {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.question-form__field {
+		width: 250px;
+	}
+
+	.question-form__submit {
+		margin: 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.question-form__list {
+		flex-direction: column;
+
+		width: 100%;
+	}
+
+	.question-form__item {
+		display: flex;
+		justify-content: center;
+
+		margin-bottom: 5px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+	}
+
+	.question-form__field {
+		padding: 15px;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	.question-form__field {
+		width: 230px;
+	}
+
+	.question-form__agree-label {
+		box-sizing: border-box;
+
+		font-size: 12px;
+	}
+
+}
