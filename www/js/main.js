@@ -234,12 +234,18 @@ $(document).ready(function(){
 
 	var commentsList = $('.comments__list');
 	var commentsCounterAmount = $('.comments__counter-amount');
-	console.log(commentsCounterAmount)
+	var commentsCounterCurrent = $('.comments__counter-current');
+
+	// commentsCounterAmount.text(commentsList.children().length);
 
   commentsList.owlCarousel({
   	items: 2,
   	nav: true,
+  	mouseDrag: false,
+  	touchDrag: false,
   	pagination: true,
+  	onInitialized: onCommentsSliderInitialized,
+  	onTranslated: onCommentsSliderTranslated,
   	responsive: {
   		0: {
   			items: 1,
@@ -268,5 +274,18 @@ $(document).ready(function(){
   $('.comments__next').click(function () {
   	commentsList.trigger('next.owl.carousel')
   });
+
+  function onCommentsSliderInitialized(evt) {
+
+  	commentsCounterAmount.text(evt.item.count - 1);
+  	console.log(evt.page)
+
+  }
+
+  function onCommentsSliderTranslated(evt) {
+
+  	commentsCounterCurrent.text(evt.item.index + 1);
+
+  }
 
 });
