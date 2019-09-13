@@ -1919,7 +1919,11 @@ INDEX CATALOG
   .index-catalog__title {
     font-size: 24px; }
   .index-catalog__goods {
-    width: 300px; } }
+    width: 300px; }
+  .index-catalog__tab--petroleum button::before {
+    left: 15px; }
+  .index-catalog__tab--oil button::before {
+    left: 45px; } }
 
 /*********
 PRODUCT

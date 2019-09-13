@@ -207,4 +207,20 @@ INDEX CATALOG
 		width: 300px;
 	}
 
+	.index-catalog__tab--petroleum button {
+
+			&::before {
+				left: 15px;
+			}
+
+		}
+
+		.index-catalog__tab--oil button {
+
+			&::before {
+				left: 45px;
+			}
+
+		}
+
 }
