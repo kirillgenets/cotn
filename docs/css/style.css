@@ -3352,3 +3352,127 @@ CLIENTS
     -webkit-filter: none;
             filter: none;
     opacity: 1; } }
+
+/**************
+INDEX CONTACTS
+**************/
+.index-contacts {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 95px;
+  padding-bottom: 60px; }
+
+.index-contacts__title {
+  margin: 0;
+  margin-bottom: 90px;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  font-size: 48px;
+  font-weight: 300; }
+
+.index-contacts__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.index-contacts__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 700px;
+  margin: 0;
+  padding: 0; }
+
+.index-contacts__item-name {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "ProximaNova Regular", Tahoma, sans-serif;
+  font-size: 14px;
+  color: #747474; }
+
+.index-contacts__item-value {
+  margin: 0;
+  font-size: 20px; }
+
+.index-contacts__social {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 215px;
+  margin: 0;
+  padding: 0; }
+
+.index-contacts__social-item a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid #e1e1e1;
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s; }
+
+.index-contacts__social-item--whatsapp a {
+  background-image: url(../img/whatsapp.svg); }
+
+.index-contacts__social-item--facebook a {
+  background-image: url(../img/facebook.svg); }
+
+.index-contacts__social-item--vk a {
+  background-image: url(../img/vk.svg); }
+
+.index-contacts__social-item--skype a {
+  background-image: url(../img/skype.svg); }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 768px) {
+  .index-contacts__social-item a:hover {
+    border-color: #442e3f;
+    background-color: #442e3f; }
+  .index-contacts__social-item--whatsapp a:hover {
+    background-image: url(../img/whatsapp-white.svg); }
+  .index-contacts__social-item--facebook a:hover {
+    background-image: url(../img/facebook-white.svg); }
+  .index-contacts__social-item--vk a:hover {
+    background-image: url(../img/vk-white.svg); }
+  .index-contacts__social-item--skype a:hover {
+    background-image: url(../img/skype-white.svg); } }
+
+@media screen and (max-width: 1200px) {
+  .index-contacts {
+    width: 768px; }
+  .index-contacts__list {
+    width: 530px; }
+  .index-contacts__item-value {
+    font-size: 18px; } }
+
+@media screen and (max-width: 800px) {
+  .index-contacts {
+    width: 480px;
+    padding-top: 60px;
+    padding-bottom: 45px; }
+  .index-contacts__title {
+    margin-bottom: 30px;
+    font-size: 36px;
+    text-align: center; }
+  .index-contacts__info {
+    flex-direction: column; }
+  .index-contacts__list {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px; }
+  .index-contacts__item {
+    margin-bottom: 20px;
+    text-align: center; }
+    .index-contacts__item::last-child {
+      margin-bottom: 0; }
+  .index-contacts__social {
+    margin: 0 auto; } }
+
+@media screen and (max-width: 520px) {
+  .index-contacts {
+    width: 300px;
+    padding-top: 40px;
+    padding-bottom: 30px; }
+  .index-contacts__title {
+    font-size: 28px; } }
