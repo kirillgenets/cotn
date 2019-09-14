@@ -426,8 +426,10 @@ function onClientsSliderInitialized(evt) {
 
 	if (document.documentElement.clientWidth >= 800 && document.documentElement.clientWidth <= 1200) {
 		clientsCounterAmount.text(evt.item.count - 2);
-	} else if (document.documentElement.clientWidth <= 800) {
+	} else if (document.documentElement.clientWidth <= 800 && document.documentElement.clientWidth >= 520) {
 		clientsCounterAmount.text(evt.item.count - 1);
+	} else if (document.documentElement.clientWidth <= 520) {
+		clientsCounterAmount.text(evt.item.count);
 	}	else {
 		clientsCounterAmount.text(evt.item.count - 5);
 	}
