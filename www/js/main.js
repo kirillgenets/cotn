@@ -429,7 +429,7 @@ function onClientsSliderInitialized(evt) {
 	} else if (document.documentElement.clientWidth <= 800 && document.documentElement.clientWidth >= 520) {
 		clientsCounterAmount.text(evt.item.count - 1);
 	} else if (document.documentElement.clientWidth <= 520) {
-		clientsCounterAmount.text(evt.item.count);
+		clientsCounterAmount.text(evt.item.count + 1);
 	}	else {
 		clientsCounterAmount.text(evt.item.count - 5);
 	}
