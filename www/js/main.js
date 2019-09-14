@@ -371,7 +371,7 @@ function onNewsSliderInitialized(evt) {
 	} else if (document.documentElement.clientWidth <=520) {
 		newsCounterAmount.text(evt.item.count);
 	}	else {
-		newsCounterAmount.text(evt.item.count - 1);
+		newsCounterAmount.text(evt.item.count - 2);
 	}
 
 }

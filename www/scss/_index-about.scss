@@ -172,9 +172,27 @@ INDEX ABOUT
 	text-transform: uppercase;
 	text-align: center;
 	color: #fff;
+
+	transition: 0.3s;
 }
 
 /*RESPONSIVE*/
+
+@media screen and (min-width: 768px) {
+
+	.index-about__start {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+
+	}
+
+}
 
 @media screen and (max-width: 1200px) {
 
