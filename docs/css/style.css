@@ -3347,4 +3347,8 @@ CLIENTS
     width: 190px;
     margin: 0 auto; }
   .clients__item {
-    width: 190px; } }
+    width: 190px; }
+  .clients__list .owl-item.active img {
+    -webkit-filter: none;
+            filter: none;
+    opacity: 1; } }

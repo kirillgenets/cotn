@@ -145,4 +145,9 @@ CLIENTS
 		width: 190px;
 	}
 
+	.clients__list .owl-item.active img {
+		filter: none;
+		opacity: 1;
+	}
+
 }
