@@ -2209,9 +2209,13 @@ CALC
   font-weight: 300;
   color: #747474; }
 
-.calc__indicator-value {
+.calc__indicator-number {
   margin: 0;
-  font-size: 36px; }
+  font-size: 36px;
+  white-space: nowrap; }
+
+.calc__total {
+  transform: translateX(-30px); }
 
 .calc__total-description {
   margin: 0;
@@ -2219,16 +2223,17 @@ CALC
   font-family: "ProximaNova Regular", Tahoma, sans-serif;
   font-size: 14px;
   font-weight: 300;
-  color: #747474; }
+  color: #747474;
+  text-align: center; }
 
 .calc__total-price {
   margin-top: 0;
   margin-bottom: 45px;
-  font-size: 24px; }
+  font-size: 48px;
+  text-align: center; }
 
 .calc__total-value {
-  margin-right: 10px;
-  font-size: 48px; }
+  margin-right: 10px; }
 
 .calc__total-explanation {
   margin: 0;
@@ -2282,7 +2287,10 @@ CALC
   .calc__input-wrapper {
     width: 450px; }
   .calc__info {
-    align-self: flex-start; } }
+    align-self: flex-start; }
+  .calc__total-price {
+    text-align: right;
+    font-size: 40px; } }
 
 @media screen and (max-width: 800px) {
   .calc {
@@ -2331,20 +2339,23 @@ CALC
   .calc__indicator-description {
     margin-bottom: 0;
     font-size: 12px; }
-  .calc__indicator-value {
-    font-size: 30px; }
+  .calc__indicator-number {
+    font-size: 24px; }
+  .calc__total {
+    transform: none; }
   .calc__total-wrapper {
     width: 240px;
     text-align: right; }
   .calc__total-description {
     margin-bottom: 0;
-    font-size: 12px; }
+    font-size: 12px;
+    text-align: right; }
   .calc__total-price {
     margin-bottom: 15px;
-    font-size: 20px; }
+    font-size: 24px;
+    text-align: right; }
   .calc__total-value {
-    margin-right: 3px;
-    font-size: 36px; }
+    margin-right: 3px; }
   .calc__total-count {
     padding: 15px 0;
     width: 180px;
@@ -2368,6 +2379,8 @@ CALC
     .calc__indicator::before {
       display: none; }
   .calc__total-wrapper {
+    text-align: center; }
+  .calc__total-description, .calc__total-price {
     text-align: center; } }
 
 /*************
