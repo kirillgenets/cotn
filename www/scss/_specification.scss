@@ -23,6 +23,14 @@ img {
 	max-width: 100%;
 }
 
+button, a {
+
+	&:focus {
+		outline: none;
+	}
+
+}
+
 a {
 	text-decoration: none;
 }

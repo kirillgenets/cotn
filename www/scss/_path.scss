@@ -1,0 +1,53 @@
+/****
+PATH
+****/
+
+.path {
+	display: flex;
+
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+}
+
+.path__item {
+	margin-right: 2px;
+	padding-right: 10px;
+
+	position: relative;
+
+	&::after {
+		content: '/';
+
+		position: absolute;
+		right: 0;
+		top: 3px;
+
+		font-family: $fr-l;
+		font-size: 12px;
+		font-weight: 200;
+		color: #747474;
+	}
+
+	&:last-child a {
+		font-family: $fr-reg;
+		font-weight: 300;
+		color: $purple;
+
+		&::after {
+			content: '';
+		}
+
+	}
+
+}
+
+.path__item a {
+	margin: 0;
+
+	font-family: $fr-l;
+	font-size: 12px;
+	font-weight: 200;
+	color: #747474;
+}

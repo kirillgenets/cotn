@@ -1,0 +1,23 @@
+/********
+CATALOG
+********/
+
+.catalog {
+	width: 1170px;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottomы: 160px;
+}
+
+.catalog__path {
+	margin-bottom: 35px;
+}
+
+.catalog__title {
+	margin: 0;
+	margin-bottom: 60px;
+
+	font-family: $fr-l;
+	font-size: 48px;
+	font-weight: 200;
+}

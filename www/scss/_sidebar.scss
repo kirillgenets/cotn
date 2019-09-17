@@ -1,0 +1,227 @@
+/*******
+SIDEBAR
+*******/
+
+.sidebar {
+	width: 240px;
+}
+
+.sidebar__product-types-list {
+	list-style: none;
+
+	width: 230px;
+	margin: 0 auto 35px;
+	padding: 0;
+}
+
+.sidebar__product-type {
+	padding: 20px 0;
+	border-top: 1px solid #e1e1e1;
+
+	&:last-child {
+		border-bottom: 1px solid #e1e1e1;
+	}
+
+	&--oil .sidebar__product-type-title {
+
+		&::before {
+			width: 19px;
+			height: 21px;
+
+			background-image: url(../img/oil.svg);
+		}
+
+	}
+
+	&--petroleum .sidebar__product-type-title {
+
+		&::before {
+			width: 15px;
+			height: 17px;
+
+			background-image: url(../img/drop.svg);
+		}
+
+	}
+
+}
+
+.sidebar__product-type-title {
+	display: block;
+
+	padding-left: 25px;
+
+	position: relative;
+
+	font-family: $fr-smb;
+	font-size: 12px;
+	text-transform: uppercase;
+
+	cursor: pointer;
+
+	transition: 0.3s;
+
+	&::before {
+		content: '';
+
+		position: absolute;
+		left: 0;
+		top: 50%;
+
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+		transform: translateY(-50%);
+	}
+
+	&::after {
+		content: '+';
+
+		position: absolute;
+		right: 0;
+		top: 50%;
+
+		font-family: $fr-smb;
+		font-size: 14px;
+
+		transform: translateY(-50%);
+	}
+
+}
+
+.sidebar__price-title {
+	margin: 0;
+	margin-bottom: 25px;
+
+	position: relative;
+
+	font-family: $fr-smb;
+	font-size: 12px;
+	text-transform: uppercase;
+
+	cursor: pointer;
+
+	&::after {
+		content: '+';
+
+		position: absolute;
+		right: 0;
+		top: 50%;
+
+		font-family: $fr-smb;
+		font-size: 14px;
+
+		transform: translateY(-50%);
+	}
+
+}
+
+.sidebar__price-slider {
+	margin-bottom: 35px;
+}
+
+.sidebar__price-line {
+	width: 100%;
+	height: 3px;
+
+	position: relative;
+
+	background-color: #faeaca;
+}
+
+.sidebar__price-pin {
+	position: absolute;
+	left: 0;
+	top: 5px;
+
+	&--low {
+		left: 30px;
+	}
+
+	&--high {
+		left: 145px;
+	}
+
+}
+
+.sidebar__price-pin button {
+	width: 10px;
+	height: 12px;
+	margin-top: 3px;
+	border: none;
+
+	position: relative;
+
+	background-color: $purple;
+
+	cursor: pointer;
+
+	&::before {
+		content: '';
+
+		width: 0;
+		height: 0;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-bottom: 5px solid $purple;
+
+		position: absolute;
+		left: 0;
+		top: -5px;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+}
+
+.sidebar__price-level {
+	width: 116px;
+	height: 3px;
+
+	position: absolute;
+	left: 35px;
+	top: 0;
+
+	background-color: $purple;
+}
+
+.sidebar__prices-fields {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sidebar__price-input {
+	width: 85px;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 768px) {
+
+	.sidebar__product-type-title {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+
+	}
+
+	.sidebar__price-title {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+
+	}
+
+}
