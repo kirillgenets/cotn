@@ -87,6 +87,40 @@ SIDEBAR
 		transform: translateY(-50%);
 	}
 
+	&--opened {
+
+		&::after {
+			content: '-';
+		}
+
+	}
+
+}
+
+.sidebar__product-type-sublist {
+	display: none;
+
+	list-style: none;
+
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+}
+
+.sidebar__product-type-subitem {
+	padding: 5px 25px;
+}
+
+.sidebar__product-type-subitem a {
+	font-family: $fr-l;
+	font-size: 12px;
+	font-weight: 200;
+	text-transform: uppercase;
+	color: $dark-purple;
+
+	cursor: pointer;
+
+	transition: 0.3s;
 }
 
 .sidebar__price-title {
@@ -223,5 +257,18 @@ SIDEBAR
 		}
 
 	}
+
+	.sidebar__product-type-subitem a {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+
+	}
+
 
 }
