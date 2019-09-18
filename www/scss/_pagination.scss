@@ -114,3 +114,15 @@ PAGINATION
 	}
 
 }
+
+@media screen and (max-width: 800px) {
+
+	.pagination {
+		width: 250px;
+	}
+
+	.pagination__list {
+		width: 200px;
+	}
+
+}

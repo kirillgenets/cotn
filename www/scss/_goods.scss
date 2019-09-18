@@ -191,4 +191,60 @@ GOODS
 
 @media screen and (max-width: 1200px) {
 
+	.goods {
+		width: 510px;
+	}
+
+	.goods__list .product {
+		width: 250px;
+	}
+
+}
+
+@media screen and (max-width: 805px) {
+
+	.goods {
+		width: 250px;
+	}
+
+	.goods__sort-wrapper {
+		flex-direction: column;
+	}
+
+	.goods__sort-main {
+		flex-direction: column;
+	}
+
+	.goods__shown-amount {
+		margin-bottom: 15px;
+	}
+
+	.goods__view-buttons {
+		align-self: flex-end;
+	}
+
+	.goods__list {
+		justify-content: center;
+	}
+
+	.goods__list .product {
+		min-width: 250px;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	.goods {
+		width: 100%;
+	}
+
+	.goods__view-buttons {
+		display: none;
+	}
+
+	.goods .product {
+		width: 100%;
+	}
+
 }

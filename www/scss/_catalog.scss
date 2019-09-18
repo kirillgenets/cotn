@@ -27,3 +27,41 @@ CATALOG
 	justify-content: space-between;
 	align-items: flex-start;
 }
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1200px) {
+
+	.catalog {
+		width: 768px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.catalog {
+		width: 480px;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	.catalog {
+		width: 300px;
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+
+	.catalog__title {
+		margin-bottom: 35px;
+
+		font-size: 30px;
+	}
+
+	.catalog__main {
+		flex-direction: column;
+	}
+
+}

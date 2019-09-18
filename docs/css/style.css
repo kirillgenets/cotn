@@ -3855,6 +3855,26 @@ CATALOG
   justify-content: space-between;
   align-items: flex-start; }
 
+/*RESPONSIVE*/
+@media screen and (max-width: 1200px) {
+  .catalog {
+    width: 768px; } }
+
+@media screen and (max-width: 800px) {
+  .catalog {
+    width: 480px; } }
+
+@media screen and (max-width: 520px) {
+  .catalog {
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 40px; }
+  .catalog__title {
+    margin-bottom: 35px;
+    font-size: 30px; }
+  .catalog__main {
+    flex-direction: column; } }
+
 /*******
 SIDEBAR
 *******/
@@ -4179,6 +4199,23 @@ SIDEBAR
   .sidebar__remove-filter-button:active {
     opacity: 0.8; } }
 
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    width: 210px; }
+  .sidebar__product-types-list {
+    width: 200px; }
+  .sidebar__banner img {
+    width: 210px;
+    height: 401px; } }
+
+@media screen and (max-width: 520px) {
+  .sidebar {
+    width: 100%; }
+  .sidebar__product-types-list {
+    width: 100%; }
+  .sidebar__banner {
+    display: none; } }
+
 /*****
 GOODS
 *****/
@@ -4296,6 +4333,36 @@ GOODS
   .goods__view-button--chosen button:active {
     opacity: 0.3; } }
 
+@media screen and (max-width: 1200px) {
+  .goods {
+    width: 510px; }
+  .goods__list .product {
+    width: 250px; } }
+
+@media screen and (max-width: 805px) {
+  .goods {
+    width: 250px; }
+  .goods__sort-wrapper {
+    flex-direction: column; }
+  .goods__sort-main {
+    flex-direction: column; }
+  .goods__shown-amount {
+    margin-bottom: 15px; }
+  .goods__view-buttons {
+    align-self: flex-end; }
+  .goods__list {
+    justify-content: center; }
+  .goods__list .product {
+    min-width: 250px; } }
+
+@media screen and (max-width: 520px) {
+  .goods {
+    width: 100%; }
+  .goods__view-buttons {
+    display: none; }
+  .goods .product {
+    width: 100%; } }
+
 /****
 SORT
 ****/
@@ -4370,6 +4437,10 @@ SORT
   .sort__item:active {
     opacity: 0.8; } }
 
+@media screen and (max-width: 800px) {
+  .sort {
+    margin-bottom: 15px; } }
+
 /**********
 PAGINATION
 **********/
@@ -4435,3 +4506,9 @@ PAGINATION
     opacity: 1; }
   .pagination__item--chosen a:active {
     opacity: 1; } }
+
+@media screen and (max-width: 800px) {
+  .pagination {
+    width: 250px; }
+  .pagination__list {
+    width: 200px; } }

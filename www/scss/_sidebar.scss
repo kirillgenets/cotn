@@ -549,3 +549,36 @@ SIDEBAR
 	}
 
 }
+
+@media screen and (max-width: 1200px) {
+
+	.sidebar {
+		width: 210px;
+	}
+
+	.sidebar__product-types-list {
+		width: 200px;
+	}
+
+	.sidebar__banner img {
+		width: 210px;
+		height: 401px;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	.sidebar {
+		width: 100%;
+	}
+
+	.sidebar__product-types-list {
+		width: 100%;
+	}
+
+	.sidebar__banner {
+		display: none;
+	}
+
+}
