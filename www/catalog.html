@@ -489,20 +489,28 @@
 					</ul>
 					<div class="sidebar__price">
 						<p class="sidebar__price-title">Цена</p>
-						<div class="sidebar__price-slider">
-							<div class="sidebar__price-line">
-								<div class="sidebar__price-pin sidebar__price-pin--low">
-									<button></button>
-								</div>
-								<div class="sidebar__price-level"></div>
-								<div class="sidebar__price-pin sidebar__price-pin--high">
-									<button></button>
+						<div class="sidebar__price-content">
+							<div class="sidebar__price-slider">
+								<div class="sidebar__price-line">
+									<div class="sidebar__price-pin sidebar__price-pin--low">
+										<button></button>
+									</div>
+									<div class="sidebar__price-level"></div>
+									<div class="sidebar__price-pin sidebar__price-pin--high">
+										<button></button>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="sidebar__prices-fields">
-							<input class="sidebar__price-input sidebar__price-input--low" type="text">
-							<input class="sidebar__price-input sidebar__price-input--high" type="text">
+							<div class="sidebar__prices-fields">
+								<div class="sidebar__price-field sidebar__price-field--low">
+									<input type="text" name="lower-price">
+									<span class="rubble">Р</span>
+								</div>
+								<div class="sidebar__price-field sidebar__price-field--high">
+									<input type="text" name="higher-price">
+									<span class="rubble">Р</span>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="sidebar__brands">
@@ -519,12 +527,7 @@
 								<p class="sidebar__brand-count">423</p>
 							</li>
 							<li class="sidebar__brand">
-								<input class="sidebar__brand-choose" id="dt-gazprom" type="checkbox" name="choose-product-type">
-								<label class="sidebar__brand-label" for="dt-gazprom">ДТ Евро-5 Газпром</label>
-								<p class="sidebar__brand-count">723</p>
-							</li>
-							<li class="sidebar__brand">
-								<input class="sidebar__brand-choose" id="meguin" type="checkbox">
+								<input class="sidebar__brand-choose" id="meguin" type="checkbox" name="choose-product-type">
 								<label class="sidebar__brand-label" for="meguin">MEGUIN</label>
 								<p class="sidebar__brand-count">33</p>
 							</li>
@@ -544,61 +547,74 @@
 								<p class="sidebar__brand-count">63</p>
 							</li>
 							<li class="sidebar__brand">
-								<input class="sidebar__brand-choose" id="meguin" type="checkbox" name="choose-product-type">
-								<label class="sidebar__brand-label" for="meguin">TEXACO</label>
+								<input class="sidebar__brand-choose" id="texaco" type="checkbox" name="choose-product-type">
+								<label class="sidebar__brand-label" for="texaco">TEXACO</label>
 								<p class="sidebar__brand-count">33</p>
 							</li>
 						</ul>
 					</div>
 					<div class="sidebar__filtrate">
 						<button class="sidebar__filtrate-button">Применить фильтр</button>
-						<button class="sidebar__remove-filter-button"></button>
+						<button class="sidebar__remove-filter-button">Сбросить фильтр</button>
 					</div>
-					<img class="sidebar__banner" src="img/banner.jpg" alt="Реклама нашей продукции">
+					<a class="sidebar__banner" href="#">
+						<img src="img/banner.jpg" alt="Реклама нашей продукции">
+					</a>
 				</div>
 
 				<div class="goods">
 					<div class="goods__sort-wrapper">
-						<div class="goods__sort">
-							<p class="goods__sort-description">Сортировка:</p>
-							<ul class="sort" aria-label="Выберите тип сортировки">
-								<li>
-									<span class="sort__chosen">
-										По умолчанию
-									</span>
-									<ul class="sort__list">
-										<li class="sort__item" data-option data-value="1">
-											По цене (дешевые)
-										</li>
-										<li class="sort__item" data-option data-value="2">
-											По цене (дорогие)
-										</li>
-										<li class="sort__item" data-option data-value="3">
-											По популярности
-										</li>
-										<li class="sort__item" data-option data-value="4">
-											По алфавиту
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<div class="goods__shown-amount">
-							<p class="goods__shown-amount-description">Показать:</p>
-							<ul class="goods__shown-amount-list">
-								<li class="goods__shown-amount-item">
-									16
-								</li>
-								<li class="goods__shown-amount-item">
-									25
-								</li>
-								<li class="goods__shown-amount-item">
-									50
-								</li>
-							</ul>
+						<div class="goods__sort-main">
+							<div class="sort">
+								<p class="sort__description">Сортировка:</p>
+								<ul class="sort__list" aria-label="Выберите тип сортировки">
+									<li>
+										<span class="sort__chosen">
+											По умолчанию
+										</span>
+										<ul class="sort__sublist">
+											<li class="sort__item" data-option data-value="1">
+												По цене (дешевые)
+											</li>
+											<li class="sort__item" data-option data-value="2">
+												По цене (дорогие)
+											</li>
+											<li class="sort__item" data-option data-value="3">
+												По популярности
+											</li>
+											<li class="sort__item" data-option data-value="4">
+												По алфавиту
+											</li>
+											<li class="sort__item" data-option data-value="5">
+												По умолчанию
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="goods__shown-amount">
+								<p class="goods__shown-amount-description">Показать:</p>
+								<ul class="goods__shown-amount-list">
+									<li class="goods__shown-amount-item goods__shown-amount-item--chosen">
+										<button>
+											16
+										</button>
+									</li>
+									<li class="goods__shown-amount-item">
+										<button>
+											25
+										</button>
+									</li>
+									<li class="goods__shown-amount-item">
+										<button>
+											50
+										</button>
+									</li>
+								</ul>
+							</div>
 						</div>
 						<ul class="goods__view-buttons">
-							<li class="goods__view-button goods__view-button--grid">
+							<li class="goods__view-button goods__view-button--grid goods__view-button--chosen">
 								<button>
 									<span class="visually-hidden">Сеточное отображение</span>
 								</button>
@@ -767,13 +783,15 @@
 					</ul>
 					<div class="pagination">
 						<button class="pagination__prev">
-							<img src="img/arrow-slider-reviews.png" alt="Кнопка назад">
+							<a href="#">
+								<img src="img/arrow-slider-reviews.png" alt="Кнопка назад">
+							</a>
 						</button>
 						<ul class="pagination__list">
 							<li class="pagination__item">
 								<a href="#">1</a>
 							</li>
-							<li class="pagination__item">
+							<li class="pagination__item pagination__item--chosen">
 								<a href="#">2</a>
 							</li>
 							<li class="pagination__item">
@@ -784,7 +802,9 @@
 							</li>
 						</ul>
 						<button class="pagination__next">
-							<img src="img/arrow-slider-reviews.png" alt="Кнопка вперед">
+							<a href="#">
+								<img src="img/arrow-slider-reviews.png" alt="Кнопка вперед">
+							</a>
 						</button>
 					</div>
 				</div>
@@ -904,7 +924,7 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-	<script src="js/header.min.js" type="text/javascript"></script>
-	<script src="js/catalog.min.js" type="text/javascript"></script>
+	<script src="js/header.min.js"></script>
+	<script src="js/catalog.min.js"></script>
 	</body>
 </html>

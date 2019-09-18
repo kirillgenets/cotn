@@ -52,6 +52,7 @@ menuCatalogTitle.addEventListener('click', onMenuCatalogTitleClick);
 
 function onChosenCityClick() {
 
+	chosenCity.classList.toggle('cities__chosen-city--opened');
 	showCitiesList();
 
 }

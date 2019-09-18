@@ -6,7 +6,7 @@ CATALOG
 	width: 1170px;
 	margin: 0 auto;
 	padding-top: 40px;
-	padding-bottomы: 160px;
+	padding-bottom: 160px;
 }
 
 .catalog__path {
@@ -20,4 +20,10 @@ CATALOG
 	font-family: $fr-l;
 	font-size: 48px;
 	font-weight: 200;
+}
+
+.catalog__main {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 }

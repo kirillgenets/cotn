@@ -1,4 +1,12 @@
 var productTypeTitles = $('.sidebar__product-type-title');
+var priceTitle = $('.sidebar__price-title');
+var brandsTitle = $('.sidebar__brands-title');
+var brandsTitleContent = $('.sidebar__brands-list');
+var sortChosen = $('.sort__chosen');
+var sortList = $('.sort__sublist');
+
+var shownAmountItems = document.querySelectorAll('.goods__shown-amount-item button');
+var viewButtons = document.querySelectorAll('.goods__view-button button');
 
 productTypeTitles.each(function () {
 
@@ -8,6 +16,86 @@ productTypeTitles.each(function () {
 	});
 
 });
+
+priceTitle.click(onPriceTitleClick);
+priceTitle.mousedown(function(evt) {
+	evt.preventDefault();
+});
+
+brandsTitle.click(onBrandsTitleClick);
+brandsTitle.mousedown(function(evt) {
+	evt.preventDefault();
+});
+
+sortChosen.click(onSortChosenClick);
+sortChosen.mousedown(function(evt) {
+	evt.preventDefault();
+});
+
+sortList.click(onSortListClick);
+
+shownAmountItems.forEach(function (item) {
+
+	item.addEventListener('click', function (evt) {
+		document.querySelector('.goods__shown-amount-item--chosen').classList.remove('goods__shown-amount-item--chosen');
+		evt.target.parentNode.classList.add('goods__shown-amount-item--chosen');
+	});
+
+});
+
+viewButtons.forEach(function (item) {
+
+	item.addEventListener('click', function (evt) {
+		document.querySelector('.goods__view-button--chosen').classList.remove('goods__view-button--chosen');
+		evt.target.parentNode.classList.add('goods__view-button--chosen');
+	});
+
+});
+
+function onSortListClick(evt) {
+
+	sortChosen.text(evt.target.textContent);
+	sortList.hide('fast');
+
+}
+
+function onSortChosenClick() {
+
+	$(this).toggleClass('sort__chosen--opened');
+
+	if (sortList.css('display') === 'none') {
+		sortList.slideDown('fast');
+	} else {
+		sortList.hide('fast');
+	}
+
+}
+
+function onBrandsTitleClick() {
+
+	$(this).toggleClass('sidebar__brands-title--opened');
+
+	if (brandsTitleContent.css('display') === 'none') {
+		brandsTitleContent.slideDown('fast');
+	} else {
+		brandsTitleContent.hide('fast');
+	}
+
+}
+
+function onPriceTitleClick() {
+
+	$(this).toggleClass('sidebar__price-title--opened');
+
+	var priceTitleContent = $(this).parent().find('.sidebar__price-content');
+
+	if (priceTitleContent.css('display') === 'none') {
+		priceTitleContent.slideDown('fast');
+	} else {
+		priceTitleContent.hide('fast');
+	}
+
+}
 
 function onProductTypeTitleClick() {
 
@@ -22,4 +110,3 @@ function onProductTypeTitleClick() {
 	}
 
 }
-
