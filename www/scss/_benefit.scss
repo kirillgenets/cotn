@@ -14,6 +14,18 @@ BENEFIT
 		border-bottom: 1px solid #e1e1e1;
 	}
 
+	&--column {
+		display: block;
+
+		padding: 0;
+		border: none;
+
+		&:last-child {
+			border: none;
+		}
+
+	}
+
 }
 
 .benefit__icon {
@@ -58,6 +70,10 @@ BENEFIT
 	}
 
 
+}
+
+.benefit--column .benefit__icon {
+	margin-bottom: 40px;
 }
 
 .benefit__icon img {
@@ -117,10 +133,31 @@ BENEFIT
     height: 65px;
 	}
 
+	.benefit--column .benefit__icon {
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+
 	.benefit__description {
 		width: 170px;
 
 		font-size: 14px;
+	}
+
+	.benefit--column .benefit__description {
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	.benefit {
+
+		&--column {
+			margin-bottom: 10px;
+		}
+
 	}
 
 }
