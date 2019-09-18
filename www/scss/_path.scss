@@ -30,15 +30,31 @@ PATH
 		color: #747474;
 	}
 
-	&:last-child a {
-		font-family: $fr-reg;
-		font-weight: 300;
-		color: $purple;
+	&:last-child {
 
 		&::after {
 			content: '';
 		}
 
+	}
+
+	&:last-child a {
+		font-family: $fr-reg;
+		font-weight: 300;
+		color: $purple;
+	}
+
+}
+
+.path--white .path__item {
+
+	&::after {
+		color: #fff;
+	}
+
+	&:last-child a {
+		font-family: $fr-l;
+		font-weight: 200;
 	}
 
 }
@@ -50,4 +66,8 @@ PATH
 	font-size: 12px;
 	font-weight: 200;
 	color: #747474;
+}
+
+.path--white .path__item a {
+	color: #fff;
 }
