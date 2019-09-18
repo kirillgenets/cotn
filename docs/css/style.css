@@ -4755,7 +4755,6 @@ REQUISITE
   padding-left: 10px;
   font-family: "Francker Regular", Tahoma, sans-serif;
   font-size: 16px;
-  font-weight: 300px;
   text-align: left; }
 
 .requisite__info-value {
@@ -4790,3 +4789,319 @@ REQUISITE
     font-size: 12px; }
   .requisite__info-title {
     width: 100px; } }
+
+/*******
+QUALITY
+*******/
+.quality {
+  width: 970px;
+  margin: 0 auto; }
+
+.quality__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 300; }
+
+.quality__description {
+  margin: 0;
+  margin-bottom: 70px;
+  font-family: "Francker Light", Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 200; }
+
+.quality__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.quality__item {
+  display: flex;
+  margin-bottom: 90px; }
+
+.quality__item-img {
+  display: block;
+  height: 115px;
+  margin-right: 40px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 12px 50.22px 3.78px rgba(16, 16, 36, 0.18);
+  transition: 0.3s; }
+  .quality__item-img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0;
+    transition: 0.3s; }
+  .quality__item-img::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    background-image: url(../img/magnifying-glass.svg);
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 0.3s; }
+
+.quality__item-img img {
+  width: 104px;
+  height: 115px;
+  border-radius: 10px; }
+
+.quality__item-title {
+  width: 222px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7; }
+
+.quality__item-download-wrapper {
+  display: flex; }
+
+.quality__item-download {
+  margin: 0;
+  margin-right: 5px;
+  padding-left: 55px;
+  position: relative;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #110c10;
+  transition: 0.3s; }
+  .quality__item-download::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-color: #faeaca;
+    background-image: url(../img/download.svg);
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(-50%); }
+
+.quality__item-weight {
+  margin: 0;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #858485; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 768px) {
+  .quality__item-img:hover {
+    border-radius: 0; }
+    .quality__item-img:hover::before {
+      opacity: 0.7; }
+    .quality__item-img:hover::after {
+      opacity: 1; }
+  .quality__item-img:hover img {
+    border-radius: 0; }
+  .quality__item-download:hover {
+    opacity: 0.7; }
+  .quality__item-download:active {
+    opacity: 0.5; } }
+
+@media screen and (max-width: 1200px) {
+  .quality {
+    width: 768px; } }
+
+@media screen and (max-width: 800px) {
+  .quality {
+    width: 480px;
+    margin-bottom: 70px; }
+  .quality__title {
+    margin-bottom: 15px;
+    font-size: 24px; }
+  .quality__description {
+    margin-bottom: 45px;
+    font-size: 14px; }
+  .quality__list {
+    flex-direction: column;
+    align-items: center; }
+  .quality__item:last-child {
+    margin-bottom: 0; } }
+
+@media screen and (max-width: 520px) {
+  .quality {
+    width: 300px; }
+  .quality__title, .quality__description {
+    text-align: center; }
+  .quality__description {
+    font-size: 12px; }
+  .quality__item-title {
+    width: 150px; } }
+
+/***********
+CERTIFICATES
+***********/
+.certificates {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 100px; }
+
+.certificates__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 300; }
+
+.certificates__description {
+  margin: 0;
+  margin-bottom: 70px;
+  font-family: "Francker Light", Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 200; }
+
+.certificates__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.certificates__item-img {
+  display: block;
+  width: 221px;
+  height: 156px;
+  margin-bottom: 35px;
+  position: relative;
+  transition: 0.3s; }
+  .certificates__item-img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0;
+    transition: 0.3s; }
+  .certificates__item-img::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    background-image: url(../img/magnifying-glass.svg);
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 0.3s; }
+
+.certificates__item-img img {
+  width: 221px;
+  height: 156px; }
+
+.certificates__item-title {
+  width: 222px;
+  margin: 0;
+  margin-bottom: 55px;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.7; }
+
+.certificates__item-download-wrapper {
+  display: flex; }
+
+.certificates__item-download {
+  margin: 0;
+  margin-right: 5px;
+  padding-left: 55px;
+  position: relative;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #110c10;
+  transition: 0.3s; }
+  .certificates__item-download::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-color: #faeaca;
+    background-image: url(../img/download.svg);
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(-50%); }
+
+.certificates__item-weight {
+  margin: 0;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #858485; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 768px) {
+  .certificates__item-img:hover {
+    border-radius: 0; }
+    .certificates__item-img:hover::before {
+      opacity: 0.7; }
+    .certificates__item-img:hover::after {
+      opacity: 1; }
+  .certificates__item-img:hover img {
+    border-radius: 0; }
+  .certificates__item-download:hover {
+    opacity: 0.7; }
+  .certificates__item-download:active {
+    opacity: 0.5; } }
+
+@media screen and (max-width: 1200px) {
+  .certificates {
+    width: 768px; }
+  .certificates__item {
+    margin-bottom: 50px; } }
+
+@media screen and (max-width: 800px) {
+  .certificates {
+    width: 480px; }
+  .certificates__title {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 24px; }
+  .certificates__description {
+    margin-bottom: 45px;
+    font-size: 14px; }
+  .certificates__list {
+    flex-direction: column;
+    align-items: center; }
+  .certificates__item {
+    text-align: center; }
+    .certificates__item:last-child {
+      margin-bottom: 0; }
+  .certificates__item-img {
+    margin-bottom: 10px; }
+  .certificates__item-title {
+    margin-bottom: 25px; }
+  .certificates__item-download-wrapper {
+    width: 210px;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 520px) {
+  .certificates {
+    width: 300px; }
+  .certificates__title, .certificates__description {
+    text-align: center; }
+  .certificates__description {
+    font-size: 12px; }
+  .certificates__list {
+    justify-content: center; } }
