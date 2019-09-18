@@ -4724,3 +4724,69 @@ ADVANTAGES
     margin-bottom: 10px; }
   .advantages__benefits-list {
     flex-direction: column; } }
+
+/*********
+REQUISITE
+*********/
+.requisite {
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 130px; }
+
+.requisite__title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 300; }
+
+.requisite__info {
+  width: 100%; }
+
+.requisite__info-row {
+  display: block;
+  padding: 20px 0;
+  border-top: 1px solid #e1e1e1; }
+  .requisite__info-row:last-child {
+    border-bottom: 1px solid #e1e1e1; }
+
+.requisite__info-title {
+  width: 390px;
+  padding-left: 10px;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 300px;
+  text-align: left; }
+
+.requisite__info-value {
+  font-family: "Francker Light", Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 200; }
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1200px) {
+  .requisite {
+    width: 768px; }
+  .requisite__info-title {
+    width: 300px; } }
+
+@media screen and (max-width: 800px) {
+  .requisite {
+    width: 480px;
+    margin-bottom: 60px; }
+  .requisite__title {
+    text-align: center; }
+  .requisite__info-title, .requisite__info-value {
+    font-size: 14px; }
+  .requisite__info-title {
+    width: 250px; } }
+
+@media screen and (max-width: 520px) {
+  .requisite {
+    width: 300px; }
+  .requisite__title {
+    font-size: 24px; }
+  .requisite__info-title, .requisite__info-value {
+    font-size: 12px; }
+  .requisite__info-title {
+    width: 100px; } }
