@@ -220,11 +220,15 @@ CERTIFICATES
 	}
 
 	.certificates__list {
-		flex-direction: column;
-		align-items: center;
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+
+		overflow-x: scroll;
 	}
 
 	.certificates__item {
+		margin-right: 50px;
+
 		text-align: center;
 
 		&:last-child {
@@ -260,10 +264,6 @@ CERTIFICATES
 
 	.certificates__description {
 		font-size: 12px;
-	}
-
-	.certificates__list {
-		justify-content: center;
 	}
 
 }
