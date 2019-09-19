@@ -739,8 +739,7 @@ HEADER
     width: 180px; }
   .header__search-button {
     width: 10px;
-    height: 12px;
-    background-size: 100%; }
+    height: 12px; }
   .header__contacts {
     width: 360px;
     font-size: 12px; } }
