@@ -446,7 +446,27 @@
 					Дизельное топливо, бензин и нефтепродукты по лучшим ценам.
 					Прямые поставки с НПЗ России. ДТ, АИ, Мазут, Битум, Пропан.
 				</p>
-				<a class="about-intro__start" href="#">Начать сотрудничество</a>
+				<button class="about-intro__start" href="#">Начать сотрудничество</button>
+				<form class="about-intro__modal overlay hidden" action="#">
+					<div class="about-intro__modal-wrapper">
+					<button class="about-intro__modal-close">
+						<span class="visually-hidden">Закрыть форму обратной связи</span>
+					</button>
+						<h3 class="about-intro__modal-title">Закажите звонок</h3>
+						<p class="about-intro__modal-description">и мы перезвоним вам в течение 15 минут</p>
+						<ul class="about-intro__modal-fields">
+							<li class="about-intro__modal-item">
+								<input class="about-intro__modal-field" type="text" name="name" placeholder="Ваше имя">
+								<div class="about-intro__focus-line"></div>
+							</li>
+							<li class="about-intro__modal-item">
+								<input class="about-intro__modal-field" type="text" name="phone-number" placeholder="Ваш телефон">
+								<div class="about-intro__focus-line"></div>
+							</li>
+						</ul>
+						<button class="about-intro__modal-submit" type="submit">Отправить</button>
+					</div>
+				</form>
 			</div>
 		</section>
 
@@ -798,5 +818,7 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 	<script src="js/header.min.js"></script>
+
+	<script src="js/about.min.js"></script>
 	</body>
 </html>
