@@ -4922,7 +4922,7 @@ QUALITY
 @media screen and (max-width: 800px) {
   .quality {
     width: 480px;
-    margin-bottom: 70px; }
+    margin-bottom: 30px; }
   .quality__title {
     margin-bottom: 15px;
     font-size: 24px; }
@@ -4930,10 +4930,17 @@ QUALITY
     margin-bottom: 45px;
     font-size: 14px; }
   .quality__list {
-    flex-direction: column;
-    align-items: center; }
-  .quality__item:last-child {
-    margin-bottom: 0; } }
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding-top: 35px;
+    padding-left: 35px;
+    overflow-x: scroll; }
+  .quality__item {
+    margin-right: 40px; }
+    .quality__item:last-child {
+      margin-bottom: 0; }
+  .quality__item-img {
+    min-width: 104px; } }
 
 @media screen and (max-width: 520px) {
   .quality {
@@ -5082,9 +5089,11 @@ CERTIFICATES
     margin-bottom: 45px;
     font-size: 14px; }
   .certificates__list {
-    flex-direction: column;
-    align-items: center; }
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: scroll; }
   .certificates__item {
+    margin-right: 50px;
     text-align: center; }
     .certificates__item:last-child {
       margin-bottom: 0; }
@@ -5102,6 +5111,4 @@ CERTIFICATES
   .certificates__title, .certificates__description {
     text-align: center; }
   .certificates__description {
-    font-size: 12px; }
-  .certificates__list {
-    justify-content: center; } }
+    font-size: 12px; } }
