@@ -4003,6 +4003,9 @@ SIDEBAR
   .sidebar__price-title--opened::after {
     content: '-'; }
 
+.sidebar__price-content {
+  display: none; }
+
 .sidebar__price-slider {
   margin-bottom: 35px; }
 
@@ -4122,6 +4125,7 @@ SIDEBAR
     content: '-'; }
 
 .sidebar__brands-list {
+  display: none;
   list-style: none;
   margin: 0;
   margin-bottom: 40px;
