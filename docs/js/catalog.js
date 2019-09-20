@@ -128,17 +128,17 @@ if (document.documentElement.clientWidth <= 800) {
 		onTranslated: onGoodsListTranslated,
 	});
 } else {
-	goods.removeClass('owl-carousel');
-	goods.removeClass('owl-theme');
-	goods.trigger('destroy.owl.carousel');
+	goodsList.removeClass('owl-carousel');
+	goodsList.removeClass('owl-theme');
+	goodsList.trigger('destroy.owl.carousel');
 }
 
 $('.goods__prev').click(function () {
-	goods.trigger('prev.owl.carousel')
+	goodsList.trigger('prev.owl.carousel')
 });
 
 $('.goods__next').click(function () {
-	goods.trigger('next.owl.carousel')
+	goodsList.trigger('next.owl.carousel')
 });
 
 function onGoodsListInitialized(evt) {
