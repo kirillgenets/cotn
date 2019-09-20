@@ -154,11 +154,11 @@ if (document.documentElement.clientWidth <= 800) {
 	certificatesList.trigger('destroy.owl.carousel');
 }
 
-$('.quality__prev').click(function () {
+$('.certificates__prev').click(function () {
 	certificatesList.trigger('prev.owl.carousel')
 });
 
-$('.quality__next').click(function () {
+$('.certificates__next').click(function () {
 	certificatesList.trigger('next.owl.carousel')
 });
 
