@@ -4916,6 +4916,9 @@ QUALITY
   font-size: 16px;
   font-weight: 200; }
 
+.quality__switch {
+  display: none; }
+
 .quality__list {
   display: flex;
   justify-content: space-between;
@@ -5030,16 +5033,39 @@ QUALITY
     margin-bottom: 30px; }
   .quality__title {
     margin-bottom: 15px;
-    font-size: 24px; }
+    font-size: 24px;
+    text-align: center; }
   .quality__description {
     margin-bottom: 45px;
-    font-size: 14px; }
+    font-size: 14px;
+    text-align: center; }
+  .quality__switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto; }
+  .quality__counter {
+    margin: 0; }
+  .quality__prev, .quality__next {
+    width: 12px;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s; }
+    .quality__prev:focus, .quality__next:focus {
+      outline: none; }
+  .quality__next {
+    transform: rotate(180deg); }
   .quality__list {
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    padding-top: 35px;
-    padding-left: 35px;
-    overflow-x: scroll; }
+    width: 400px;
+    box-sizing: border-box;
+    margin: 0 auto; }
+  .quality__list .owl-stage {
+    padding: 40px; }
   .quality__item {
     margin-right: 40px; }
     .quality__item:last-child {
@@ -5050,12 +5076,22 @@ QUALITY
 @media screen and (max-width: 520px) {
   .quality {
     width: 300px; }
-  .quality__title, .quality__description {
-    text-align: center; }
   .quality__description {
     font-size: 12px; }
+  .quality__list .owl-stage {
+    padding-top: 30px;
+    padding-left: 0; }
+  .quality__item {
+    flex-direction: column;
+    align-items: center;
+    width: 300px; }
+  .quality__item-img {
+    width: 104px;
+    margin-right: 0px;
+    margin-bottom: 15px; }
   .quality__item-title {
-    width: 150px; } }
+    width: 150px;
+    text-align: center; } }
 
 /***********
 CERTIFICATES
@@ -5078,6 +5114,9 @@ CERTIFICATES
   font-family: "Francker Light", Tahoma, sans-serif;
   font-size: 16px;
   font-weight: 200; }
+
+.certificates__switch {
+  display: none; }
 
 .certificates__list {
   display: flex;
@@ -5193,10 +5232,33 @@ CERTIFICATES
   .certificates__description {
     margin-bottom: 45px;
     font-size: 14px; }
+  .certificates__switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto; }
+  .certificates__counter {
+    margin: 0; }
+  .certificates__prev, .certificates__next {
+    width: 12px;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s; }
+    .certificates__prev:focus, .certificates__next:focus {
+      outline: none; }
+  .certificates__next {
+    transform: rotate(180deg); }
   .certificates__list {
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    overflow-x: scroll; }
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0 auto; }
+  .certificates__list .owl-stage {
+    padding: 40px; }
   .certificates__item {
     margin-right: 50px;
     text-align: center; }
@@ -5208,7 +5270,7 @@ CERTIFICATES
     margin-bottom: 25px; }
   .certificates__item-download-wrapper {
     width: 210px;
-    margin: 0 auto; } }
+    margin-left: 30px; } }
 
 @media screen and (max-width: 520px) {
   .certificates {

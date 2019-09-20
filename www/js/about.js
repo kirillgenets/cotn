@@ -89,3 +89,87 @@ function onModalClick(evt) {
 	}
 
 }
+
+// CAROUSELS
+
+var passportsList = $('.quality__list');
+var passportsCounterAmount = $('.quality__counter-amount');
+var passportsCounterCurrent = $('.quality__counter-current');
+
+if (document.documentElement.clientWidth <= 800) {
+	passportsList.addClass('owl-carousel');
+	passportsList.addClass('owl-theme');
+	passportsList.owlCarousel({
+		items: 1,
+		nav: true,
+		pagination: true,
+		onInitialized: onPassportsListInitialized,
+		onTranslated: onPassportsListTranslated,
+	});
+} else {
+	passportsList.removeClass('owl-carousel');
+	passportsList.removeClass('owl-theme');
+	passportsList.trigger('destroy.owl.carousel');
+}
+
+$('.quality__prev').click(function () {
+	passportsList.trigger('prev.owl.carousel')
+});
+
+$('.quality__next').click(function () {
+	passportsList.trigger('next.owl.carousel')
+});
+
+function onPassportsListInitialized(evt) {
+
+	passportsCounterAmount.text(evt.item.count);
+
+}
+
+function onPassportsListTranslated(evt) {
+
+	passportsCounterCurrent.text(evt.item.index + 1);
+
+}
+
+// CERTIFICATES CAROUSEL
+
+var certificatesList = $('.certificates__list');
+var certificatesCounterAmount = $('.certificates__counter-amount');
+var certificatesCounterCurrent = $('.certificates__counter-current');
+
+if (document.documentElement.clientWidth <= 800) {
+	certificatesList.addClass('owl-carousel');
+	certificatesList.addClass('owl-theme');
+	certificatesList.owlCarousel({
+		items: 1,
+		nav: true,
+		pagination: true,
+		onInitialized: onCertificatesListInitialized,
+		onTranslated: onCertificatesListTranslated,
+	});
+} else {
+	certificatesList.removeClass('owl-carousel');
+	certificatesList.removeClass('owl-theme');
+	certificatesList.trigger('destroy.owl.carousel');
+}
+
+$('.quality__prev').click(function () {
+	certificatesList.trigger('prev.owl.carousel')
+});
+
+$('.quality__next').click(function () {
+	certificatesList.trigger('next.owl.carousel')
+});
+
+function onCertificatesListInitialized(evt) {
+
+	certificatesCounterAmount.text(evt.item.count);
+
+}
+
+function onCertificatesListTranslated(evt) {
+
+	certificatesCounterCurrent.text(evt.item.index + 1);
+
+}
