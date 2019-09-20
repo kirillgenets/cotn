@@ -110,3 +110,46 @@ function onProductTypeTitleClick() {
 	}
 
 }
+
+// GOODS CAROUSEL
+
+var goodsList = $('.goods__list');
+var goodsCounterAmount = $('.goods__counter-amount');
+var goodsCounterCurrent = $('.goods__counter-current');
+
+if (document.documentElement.clientWidth <= 800) {
+	goodsList.addClass('owl-carousel');
+	goodsList.addClass('owl-theme');
+	goodsList.owlCarousel({
+		items: 1,
+		nav: true,
+		pagination: true,
+		onInitialized: onGoodsListInitialized,
+		onTranslated: onGoodsListTranslated,
+	});
+} else {
+	goods.removeClass('owl-carousel');
+	goods.removeClass('owl-theme');
+	goods.trigger('destroy.owl.carousel');
+}
+
+$('.goods__prev').click(function () {
+	goods.trigger('prev.owl.carousel')
+});
+
+$('.goods__next').click(function () {
+	goods.trigger('next.owl.carousel')
+});
+
+function onGoodsListInitialized(evt) {
+
+	goodsCounterAmount.text(evt.item.count);
+
+}
+
+function onGoodsListTranslated(evt) {
+
+	goodsCounterCurrent.text(evt.item.index + 1);
+
+}
+

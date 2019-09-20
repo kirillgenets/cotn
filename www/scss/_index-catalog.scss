@@ -117,6 +117,10 @@ INDEX CATALOG
 	color: #fff;
 }
 
+.index-catalog__switch {
+	display: none;
+}
+
 .index-catalog__goods {
 	display: flex;
 	justify-content: center;
@@ -186,13 +190,45 @@ INDEX CATALOG
 		margin-bottom: 25px;
 	}
 
+	.index-catalog__switch {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		width: 150px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.index-catalog__counter {
+		margin: 0;
+	}
+
+	.index-catalog__prev, .index-catalog__next {
+		width: 12px;
+		height: 23px;
+		margin: 0;
+		padding: 0;
+		border: none;
+
+		background-color: transparent;
+
+		cursor: pointer;
+
+		transition: 0.3s;
+
+		&:focus {
+			outline: none;
+		}
+
+	}
+
+	.index-catalog__next {
+		transform: rotate(180deg);
+	}
+
 	.index-catalog__goods {
-		justify-content: flex-start;
-		flex-wrap: nowrap;
-
 		width: 480px;
-
-		overflow-x: scroll;
 	}
 
 }

@@ -115,6 +115,10 @@ GOODS
 	cursor: default;
 }
 
+.goods__switch {
+	display: none;
+}
+
 .goods__list {
 	display: flex;
 	flex-wrap: wrap;
@@ -223,8 +227,45 @@ GOODS
 		align-self: flex-end;
 	}
 
+	.goods__switch {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		width: 150px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.goods__counter {
+		margin: 0;
+	}
+
+	.goods__prev, .goods__next {
+		width: 12px;
+		height: 23px;
+		margin: 0;
+		padding: 0;
+		border: none;
+
+		background-color: transparent;
+
+		cursor: pointer;
+
+		transition: 0.3s;
+
+		&:focus {
+			outline: none;
+		}
+
+	}
+
+	.goods__next {
+		transform: rotate(180deg);
+	}
+
 	.goods__list {
-		justify-content: center;
+		margin-bottom: 30px;
 	}
 
 	.goods__list .product {

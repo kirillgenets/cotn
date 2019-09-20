@@ -1876,6 +1876,9 @@ INDEX CATALOG
   background-color: #442e3f;
   color: #fff; }
 
+.index-catalog__switch {
+  display: none; }
+
 .index-catalog__goods {
   display: flex;
   justify-content: center;
@@ -1913,11 +1916,30 @@ INDEX CATALOG
     flex-direction: column;
     width: 195px;
     margin-bottom: 25px; }
+  .index-catalog__switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .index-catalog__counter {
+    margin: 0; }
+  .index-catalog__prev, .index-catalog__next {
+    width: 12px;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s; }
+    .index-catalog__prev:focus, .index-catalog__next:focus {
+      outline: none; }
+  .index-catalog__next {
+    transform: rotate(180deg); }
   .index-catalog__goods {
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    width: 480px;
-    overflow-x: scroll; } }
+    width: 480px; } }
 
 @media screen and (max-width: 520px) {
   .index-catalog__title {
@@ -2011,11 +2033,15 @@ PRODUCT
   .product {
     min-width: 300px;
     width: 300px;
+    margin: 0 auto;
     padding-top: 15px;
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    border: none; }
   .product__img {
+    max-width: 98px;
     width: 98px;
     height: 152px;
+    margin: 0 auto;
     margin-bottom: 10px; }
   .product__title {
     margin-bottom: 5px;
@@ -4339,6 +4365,9 @@ GOODS
   opacity: 0.3;
   cursor: default; }
 
+.goods__switch {
+  display: none; }
+
 .goods__list {
   display: flex;
   flex-wrap: wrap;
@@ -4387,8 +4416,30 @@ GOODS
     margin-bottom: 15px; }
   .goods__view-buttons {
     align-self: flex-end; }
+  .goods__switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .goods__counter {
+    margin: 0; }
+  .goods__prev, .goods__next {
+    width: 12px;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s; }
+    .goods__prev:focus, .goods__next:focus {
+      outline: none; }
+  .goods__next {
+    transform: rotate(180deg); }
   .goods__list {
-    justify-content: center; }
+    margin-bottom: 30px; }
   .goods__list .product {
     min-width: 250px; } }
 

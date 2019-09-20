@@ -112,13 +112,17 @@ PRODUCT
 	.product {
 		min-width: 300px;
 		width: 300px;
+		margin: 0 auto;
 		padding-top: 15px;
 		padding-bottom: 25px;
+		border: none;
 	}
 
 	.product__img {
+		max-width: 98px;
 		width: 98px;
 		height: 152px;
+		margin: 0 auto;
 		margin-bottom: 10px;
 	}
 
