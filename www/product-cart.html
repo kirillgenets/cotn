@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ЦОТН</title>
+		<link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
+		<link rel="preload" href="fonts/ProximaNova-Regular.woff2" as="font">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+	<body>
+
+	<header class="header">
+
+		<nav class="nav">
+
+			<div class="nav__wrapper">
+
+				<button class="nav__toggler">
+					<span class="visually-hidden">
+						Открыть меню
+					</span>
+				</button>
+
+				<ul class="cities" aria-label="Выберите Ваш город">
+					<li>
+						<span class="cities__chosen-city">
+							Москва
+						</span>
+						<ul class="cities__list hidden">
+							<li class="cities__city" data-option data-value="1">
+								Москва
+							</li>
+							<li class="cities__city" data-option data-value="2">
+								Санкт-Петербург
+							</li>
+							<li class="cities__city" data-option data-value="3">
+								Новосибирск
+							</li>
+							<li class="cities__city" data-option data-value="4">
+								Калининград
+							</li>
+							<li class="cities__city" data-option data-value="5">
+								Челябинск
+							</li>
+							<li class="cities__city" data-option data-value="6">
+								Волгоград
+							</li>
+							<li class="cities__city" data-option data-value="7">
+								Иркутск
+							</li>
+							<li class="cities__city" data-option data-value="8">
+								Мурманск
+							</li>
+							<li class="cities__city" data-option data-value="9">
+								Норильск
+							</li>
+							<li class="cities__city" data-option data-value="10">
+								Архангельск
+							</li>
+							<li class="cities__city" data-option data-value="11">
+								Иваново
+							</li>
+							<li class="cities__city" data-option data-value="12">
+								Магнитогорск
+							</li>
+							<li class="cities__city" data-option data-value="13">
+								Пермь
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="nav__list" aria-label="Меню сайта">
+					<li class="nav__item">
+						<a href="#">Масла</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">Цены</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">ДТ</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">Евро-5</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">Бензин АИ-95</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">Аналоги</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">ДТМазут М-100</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">СПБТ</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">Доставка</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">Контакты</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">Мегуин</a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+
+		<div class="header__wrapper">
+			<a class="header__logo" href="index.html">
+				<img src="img/logo.png" alt="Логотип компании">
+				<p>Центр оптовой торговли нефтепродуктами</p>
+			</a>
+			<div class="header__search">
+				<input class="header__search-input" type="text" placeholder="Поиск продукции">
+				<button class="header__search-button">
+					<span class="visually-hidden">Искать</span>
+				</button>
+			</div>
+			<ul class="header__contacts">
+				<li class="header__contacts-item">
+					<p class="header__contacts-value">
+						info@cotn.ru
+					</p>
+					<p class="header__contacts-description">
+						Написать нам
+					</p>
+				</li>
+				<li class="header__contacts-item">
+					<p class="header__contacts-value">
+						8800-128-38-88
+					</p>
+					<p class="header__contacts-description">
+						ПН - ПТ / 10.00 - 20.00
+					</p>
+				</li>
+				<li class="header__contacts-item">
+					<p class="header__contacts-value">
+						+7 (495) 128-38-88
+					</p>
+					<p class="header__contacts-description">
+						Обратный звонок
+					</p>
+				</li>
+			</ul>
+
+			<div class="header__shop shopping-cart">
+				<button class="shopping-cart__button">
+					<span class="visually-hidden">Просмотреть корзину</span>
+				</button>
+				<div class="shopping-cart__wrapper">
+					<div class="shopping-cart__header">
+						<p class="shopping-cart__description">
+							Сумма заказа
+						</p>
+						<p class="shopping-cart__amount">
+							<span class="shopping-cart__amount-number">88100</span> <span class="rubble">Р</span>
+						</p>
+					</div>
+					<ul class="shopping-cart__list">
+						<li class="shopping-cart__item">
+							<div class="shopping-cart__item-content">
+								<a class="shopping-cart__item-img" href="#">
+									<img src="img/shopping-cart-barrel.png" alt="Изображение товара">
+								</a>
+								<div class="shopping-cart__item-info">
+									<a class="shopping-cart__item-title" href="#">
+										Газойль Новошахтинск
+									</a>
+									<ul class="shopping-cart__item-prices">
+										<li class="shopping-cart__item-price">
+											<span class="shopping-cart__price-value">48100</span> <span class="rubble">Р</span>/Т
+										</li>
+										<li class="shopping-cart__item-price">
+											<span class="shopping-cart__price-value">39,7</span> <span class="rubble">Р</span>/Л
+										</li>
+									</ul>
+								</div>
+							</div>
+							<button class="shopping-cart__item-delete">
+								<span class="visually-hidden">Убрать товар из корзины</span>
+							</button>
+						</li>
+						<li class="shopping-cart__item">
+							<div class="shopping-cart__item-content">
+								<a class="shopping-cart__item-img" href="#">
+									<img src="img/shopping-cart-barrel.png" alt="Изображение товара">
+								</a>
+								<div class="shopping-cart__item-info">
+									<a class="shopping-cart__item-title" href="#">
+										Газойль Новошахтинск
+									</a>
+									<ul class="shopping-cart__item-prices">
+										<li class="shopping-cart__item-price">
+											<span class="shopping-cart__price-value">48100</span> <span class="rubble">Р</span>/Т
+										</li>
+										<li class="shopping-cart__item-price">
+											<span class="shopping-cart__price-value">39,7</span> <span class="rubble">Р</span>/Л
+										</li>
+									</ul>
+								</div>
+							</div>
+							<button class="shopping-cart__item-delete">
+								<span class="visually-hidden">Убрать товар из корзины</span>
+							</button>
+						</li>
+						<li class="shopping-cart__item">
+							<div class="shopping-cart__item-content">
+								<a class="shopping-cart__item-img" href="#">
+									<img src="img/shopping-cart-barrel.png" alt="Изображение товара">
+								</a>
+								<div class="shopping-cart__item-info">
+									<a class="shopping-cart__item-title" href="#">
+										Газойль Новошахтинск
+									</a>
+									<ul class="shopping-cart__item-prices">
+										<li class="shopping-cart__item-price">
+											<span class="shopping-cart__price-value">48100</span> <span class="rubble">Р</span>/Т
+										</li>
+										<li class="shopping-cart__item-price">
+											<span class="shopping-cart__price-value">39,7</span> <span class="rubble">Р</span>/Л
+										</li>
+									</ul>
+								</div>
+							</div>
+							<button class="shopping-cart__item-delete">
+								<span class="visually-hidden">Убрать товар из корзины</span>
+							</button>
+						</li>
+						<li class="shopping-cart__item">
+							<div class="shopping-cart__item-content">
+								<a class="shopping-cart__item-img" href="#">
+									<img src="img/shopping-cart-barrel.png" alt="Изображение товара">
+								</a>
+								<div class="shopping-cart__item-info">
+									<a class="shopping-cart__item-title" href="#">
+										Газойль Новошахтинск
+									</a>
+									<ul class="shopping-cart__item-prices">
+										<li class="shopping-cart__item-price">
+											<span class="shopping-cart__price-value">48100</span> <span class="rubble">Р</span>/Т
+										</li>
+										<li class="shopping-cart__item-price">
+											<span class="shopping-cart__price-value">39,7</span> <span class="rubble">Р</span>/Л
+										</li>
+									</ul>
+								</div>
+							</div>
+							<button class="shopping-cart__item-delete">
+								<span class="visually-hidden">Убрать товар из корзины</span>
+							</button>
+						</li>
+						<li class="shopping-cart__item">
+							<div class="shopping-cart__item-content">
+								<a class="shopping-cart__item-img" href="#">
+									<img src="img/shopping-cart-barrel.png" alt="Изображение товара">
+								</a>
+								<div class="shopping-cart__item-info">
+									<a class="shopping-cart__item-title" href="#">
+										Газойль Новошахтинск
+									</a>
+									<ul class="shopping-cart__item-prices">
+										<li class="shopping-cart__item-price">
+											<span class="shopping-cart__price-value">48100</span> <span class="rubble">Р</span>/Т
+										</li>
+										<li class="shopping-cart__item-price">
+											<span class="shopping-cart__price-value">39,7</span> <span class="rubble">Р</span>/Л
+										</li>
+									</ul>
+								</div>
+							</div>
+							<button class="shopping-cart__item-delete">
+								<span class="visually-hidden">Убрать товар из корзины</span>
+							</button>
+						</li>
+					</ul>
+					<ul class="shopping-cart__buttons">
+						<li>
+							<a class="shopping-cart__to-basket" href="#">
+								Перейти в корзину
+							</a>
+						</li>
+						<li>
+							<a class="shopping-cart__to-order" href="#">
+								Оформить заказ
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<nav class="menu">
+			<div class="menu__wrapper">
+				<ul class="menu-catalog">
+					<li>
+						<a class="menu-catalog__title" href="catalog.html">Каталог продукции</a>
+						<div class="menu-catalog__list-wrapper hidden">
+							<ul class="menu-catalog__list">
+								<li class="menu-catalog__item">
+									<a class="menu-catalog__name" href="#">Нефтепродукты</a>
+								</li>
+								<li class="menu-catalog__item">
+									<a class="menu-catalog__name" href="#">Смазочные материалы</a>
+								</li>
+								<li class="menu-catalog__item menu-catalog__item--parent">
+									<a class="menu-catalog__name" href="#">Каталог Liqui Moly</a>
+									<div class="menu-catalog__sublist-wrapper hidden">
+										<ul class="menu-catalog__sublist">
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Масла и смазки</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Масла и смазки</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Масла и смазки</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Масла и смазки</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+										</ul>
+										<div class="menu-catalog__product-info">
+											<img src="img/liqui-moly-logo.jpg" alt="Логотип компании-производителя">
+											<p>Liqui Moly – одна из ведущих компаний по производству автохимии, присадок, автокосметики, моторных и трансмиссионных масел премиум качества.</p>
+										</div>
+									</div>
+								</li>
+								<li class="menu-catalog__item">
+									<a class="menu-catalog__name" href="#">Каталог Texaco</a>
+								</li>
+								<li class="menu-catalog__item menu-catalog__item--parent">
+									<a class="menu-catalog__name" href="#">Каталог Sentoil</a>
+									<div class="menu-catalog__sublist-wrapper hidden">
+										<ul class="menu-catalog__sublist">
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Масла и смазки</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Автохимия профессиональная</a>
+											</li>
+											<li class="menu-catalog__sublist-item">
+												<a href="#">Велосипедная программа</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu-catalog__item">
+									<a class="menu-catalog__name" href="#">Каталог Meguin</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<button class="menu__list-toggler">
+					Меню
+				</button>
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="#">Цены</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Партнеры</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Доставка и оплата</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Контакты</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Нефтепродукты</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Компания</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Блог</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+
+	<main>
+
+		<section class="product-cart">
+
+			<ul class="product-cart__path path">
+				<li class="path__item">
+					<a href="#">Главная</a>
+				</li>
+				<li class="path__item">
+					<a href="#">Каталог товаров</a>
+				</li>
+				<li class="path__item">
+					<a href="#">ДТ Евро-5 Газпром</a>
+				</li>
+			</ul>
+
+			<div class="product-cart__main">
+				<div class="product-cart__img">
+					<img src="img/gazprom-product-cart.png" alt="Изображение товара">
+					<p>Продажа оптом. Минимальный заказ: 15 тыс. рублей.</p>
+				</div>
+				<div class="product-cart__info">
+					<h1 class="product-cart__title" data-price="39.7">ДТ Евро-5 Газпром</h1>
+					<div class="product-cart__feedback">
+
+						<div class="product-cart__feedback-stars stars">
+							<ul class="stars__list">
+								<li class="stars__item stars__item--selected">
+									<button>
+										<span class="visually-hidden">1 звезда</span>
+									</button>
+								</li>
+								<li class="stars__item stars__item--selected">
+									<button>
+										<span class="visually-hidden">2 звезды</span>
+									</button>
+								</li>
+								<li class="stars__item stars__item--selected">
+									<button>
+										<span class="visually-hidden">3 звезды</span>
+									</button>
+								</li>
+								<li class="stars__item">
+									<button>
+										<span class="visually-hidden">4 звезды</span>
+									</button>
+								</li>
+								<li class="stars__item">
+									<button>
+										<span class="visually-hidden">5 звезд</span>
+									</button>
+								</li>
+							</ul>
+							<p class="stars__info">
+								<span class="stars__value">3</span>/<span class="stars__amount">5</span>
+							</p>
+						</div>
+
+						<a class="product-cart__feedback-comments" href="#">
+							<p class="product-cart__feedback-comments-description">Отзывов:</p>
+							<p class="product-cart__feedback-comments-value">
+								7
+							</p>
+						</a>
+					</div>
+					<ul class="product-cart__indicators">
+						<li class="product-cart__indicator product-cart__indicator--variety">
+							<p class="product-cart__indicator-description">Сорт:</p>
+							<p class="product-cart__indicator-value">С</p>
+						</li>
+						<li class="product-cart__indicator product-cart__indicator--variety--type">
+							<p class="product-cart__indicator-description">Вид:</p>
+							<p class="product-cart__indicator-value">(ДТ-Л-К5)</p>
+						</li>
+					</ul>
+					<div class="product-cart__calc">
+						<p class="product-cart__calc-description">
+							Какой объем топлива Вам нужен?
+						</p>
+						<ul class="product-cart__calc-list">
+							<li class="product-cart__calc-item">
+								<input class="product-cart__calc-radio" type="radio" name="product-cart-amount" id="5000-liters" value="5000">
+								<label class="product-cart__calc-label" for="5000-liters">5000 л</label>
+							</li>
+							<li class="product-cart__calc-item">
+								<input class="product-cart__calc-radio" type="radio" name="product-cart-amount" id="10000-liters" value="10000">
+								<label class="product-cart__calc-label" for="10000-liters">10000 л</label>
+							</li>
+							<li class="product-cart__calc-item">
+								<input class="product-cart__calc-radio" type="radio" name="product-cart-amount" id="15000-liters" value="15000">
+								<label class="product-cart__calc-label" for="15000-liters">15000 л</label>
+							</li>
+							<li class="product-cart__calc-item">
+								<input class="product-cart__calc-radio" type="radio" name="product-cart-amount" id="20000-liters" value="20000">
+								<label class="product-cart__calc-label" for="20000-liters">20000 л</label>
+							</li>
+							<li class="product-cart__calc-item">
+								<input class="product-cart__calc-radio" type="radio" name="product-cart-amount" id="25000-liters" value="25000">
+								<label class="product-cart__calc-label" for="25000-liters">25000 л</label>
+							</li>
+							<li class="product-cart__calc-item">
+								<input class="product-cart__calc-radio" type="radio" name="product-cart-amount" id="30000-liters" value="30000">
+								<label class="product-cart__calc-label" for="30000-liters">30000 л</label>
+							</li>
+						</ul>
+					</div>
+					<ul class="product-cart__prices">
+						<li class="product-cart__price">
+							<p class="product-cart__price-description">Итоговая цена:</p>
+							<p class="product-cart__price-number">
+								<span class="product-cart__price-value product-cart__price-value--total">0</span> <span class="rubble">Р</span>
+							</p>
+						</li>
+						<li class="product-cart__price">
+							<p class="product-cart__price-description">Цена за литр:</p>
+							<p class="product-cart__price-number">
+								<span class="product-cart__price-value product-cart__price-value--per-liter">0</span> <span class="rubble">Р</span>/Т
+							</p>
+						</li>
+					</ul>
+					<div class="product-cart__buttons">
+						<button class="product-cart__to-cart">Добавить в корзину</button>
+						<button class="product-cart__show-passport">Паспорт качества</button>
+					</div>
+					<p class="product-cart__basis">Базис отгрузки: МНПЗ, Павельцово НБ, Солнечногорская НС.</p>
+				</div>
+			</div>
+			<div class="product-cart__special-offer">
+				<p class="product-cart__special-offer-info">
+					При заказе ДТ Евро-5 Газпром от 20 000 литров действует специальная цена!
+				</p>
+				<a class="product-cart__special-offer-link" href="#">
+					Узнать подробности
+				</a>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__content">
+				<div class="footer__info">
+					<a class="footer__logo" href="index.html">
+						<img src="img/logo-white.png" alt="Логотип компании ЦОТН">
+						<p>
+							Центр оптовой торговли нефтепродуктами. Продажа и доставка дизельного топлива оптом.
+						</p>
+					</a>
+					<ul class="footer__certificates">
+						<li class="footer__id">
+							ОГРН: 1167746642590
+						</li>
+						<li class="footer__id">
+							ИНН: 7716829024
+						</li>
+					</ul>
+				</div>
+				<nav class="footer__menu">
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item">
+							<a href="#">Масла</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#">Цены</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#">ДТ</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#">Евро-5</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#">Бензин АИ-95</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#">Аналоги</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#">ДТМазут М-100</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#">СПБТ</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#">Доставка</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#">Мегуин</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__contacts">
+					<p class="footer__phone">+7 (495) 128-38-88</p>
+					<p class="footer__schedule">ПН-ПТ/10.00-20.00</p>
+					<p class="footer__address">Алтуфьевское шоссе 37 стр.10 Москва</p>
+					<ul class="footer__emails-list">
+						<li class="footer__email">
+							<p class="footer__email-value">info@cotn.ru</p>
+							<p class="footer__email-name">(Топливо)</p>
+						</li>
+						<li class="footer__email">
+							<p class="footer__email-value">oil@cotn.ru</p>
+							<p class="footer__email-name">(Масла)</p>
+						</li>
+					</ul>
+					<ul class="footer__social">
+						<li class="footer__social-item footer__social-item--whatsapp">
+							<a href="https://whatsapp.com" target="_blank">
+								<span class="visually-hidden">Связаться с нами в WhatsApp</span>
+							</a>
+						</li>
+						<li class="footer__social-item footer__social-item--facebook">
+							<a href="https://facebook.com" target="_blank">
+								<span class="visually-hidden">Связаться с нами в Facebook</span>
+							</a>
+						</li>
+						<li class="footer__social-item footer__social-item--vk">
+							<a href="https://vk.com" target="_blank">
+								<span class="visually-hidden">Связаться с нами в VK</span>
+							</a>
+						</li>
+						<li class="footer__social-item footer__social-item--skype">
+							<a href="https://skype.com" target="_blank">
+								<span class="visually-hidden">Связаться с нами в Skype</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="copyright">
+				<div class="copyright__info">
+					<p class="copyright__rights">© 2015 - 2019 ЦОТН Нефтепродукты. Все права защищены</p>
+					<a class="copyright__website-map-link" href="#">Карта сайта</a>
+				</div>
+				<div class="copyright__contacts">
+					<p class="copyright__contacts-name">Viber/Whatsapp/Telegram:</p>
+					<p class="copyright__contacts-value">+7 495 748-62-79</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/owl.carousel.min.js"></script>
+	<script src="js/header.min.js"></script>
+	<script src="js/product-cart.min.js"></script>
+	</body>
+</html>
