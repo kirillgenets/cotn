@@ -94,3 +94,57 @@ function getCheckedRadio(name) {
   }
 
 }
+
+// ANOTHER PRODUCTS CAROUSEL
+
+var anotherProductsList = $('.another-products__list');
+var anotherProductsCounterAmount = $('.another-products__counter-amount');
+var anotherProductsCounterCurrent = $('.another-products__counter-current');
+
+anotherProductsList.owlCarousel({
+	items: 4,
+	nav: true,
+	pagination: true,
+	margin: 0,
+	onInitialized: onAnotherProductsSliderInitialized,
+	onTranslated: onAnotherProductsSliderTranslated,
+	responsive: {
+		0: {
+			items: 1,
+		},
+		800: {
+			items: 2,
+			slideBy: 2
+		},
+		1200: {
+			items: 4,
+			slideBy: 4
+		}
+	}
+});
+
+$('.another-products__prev').click(function () {
+	anotherProductsList.trigger('prev.owl.carousel')
+});
+
+$('.another-products__next').click(function () {
+	anotherProductsList.trigger('next.owl.carousel')
+});
+
+function onAnotherProductsSliderInitialized(evt) {
+
+	if (document.documentElement.clientWidth >= 800 && document.documentElement.clientWidth <= 1200) {
+		anotherProductsCounterAmount.text(evt.item.count - 1);
+	} else if (document.documentElement.clientWidth <= 800) {
+		anotherProductsCounterAmount.text(evt.item.count);
+	}	else {
+		anotherProductsCounterAmount.text(evt.item.count - 3);
+	}
+
+}
+
+function onAnotherProductsSliderTranslated(evt) {
+
+	anotherProductsCounterCurrent.text(evt.item.index + 1);
+
+}

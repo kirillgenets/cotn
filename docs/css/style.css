@@ -5925,3 +5925,100 @@ PRODUCT INFO
     font-size: 12px; }
   .product-info__table-title {
     width: 170px; } }
+
+/****************
+ANOTHER PRODUCTS
+****************/
+.another-products {
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 85px; }
+
+.another-products__heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px; }
+
+.another-products__title {
+  margin: 0;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 300; }
+
+.another-products__switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 185px; }
+
+.another-products__counter {
+  margin: 0; }
+
+.another-products__prev, .another-products__next {
+  width: 12px;
+  height: 23px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s; }
+  .another-products__prev:focus, .another-products__next:focus {
+    outline: none; }
+
+.another-products__next {
+  transform: rotate(180deg); }
+
+.another-products__list {
+  width: 100%;
+  border: 1px solid #e1e1e1; }
+
+.another-products__list .product {
+  width: 294px;
+  border: none;
+  border-right: 1px solid #e1e1e1; }
+
+.another-products__list .product__img {
+  max-width: 122px;
+  margin: 0 auto;
+  margin-bottom: 15px; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 720px) {
+  .another-products__prev:hover, .another-products__next:hover {
+    opacity: 0.8; }
+  .another-products__prev:active, .another-products__next:active {
+    opacity: 0.6; } }
+
+@media screen and (max-width: 1200px) {
+  .another-products {
+    width: 768px; }
+  .another-products__list {
+    width: 588px;
+    margin: 0 auto;
+    border: none; }
+  .another-products__list .product {
+    border: none; } }
+
+@media screen and (max-width: 800px) {
+  .another-products {
+    width: 480px;
+    margin-bottom: 30px; }
+  .another-products__heading {
+    align-items: center;
+    margin-bottom: 20px; }
+  .another-products__title {
+    font-size: 20px; }
+  .another-products__list {
+    width: 294px; }
+  .another-products__list .product__img {
+    max-width: 98px; } }
+
+@media screen and (max-width: 520px) {
+  .another-products {
+    width: 300px; }
+  .another-products__heading {
+    flex-direction: column; }
+  .another-products__title {
+    margin-bottom: 10px;
+    font-size: 24px; } }
