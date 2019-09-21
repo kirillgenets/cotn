@@ -402,3 +402,205 @@ PRODUCT CART
 	}
 
 }
+
+@media screen and (max-width: 1200px) {
+
+	.product-cart {
+		width: 768px;
+	}
+
+	.product-cart__path {
+		justify-content: center;
+	}
+
+	.product-cart__img {
+		margin-bottom: 20px;
+	}
+
+	.product-cart__main {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.product-cart__info {
+		margin: 0 auto;
+	}
+
+	.product-cart__title {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.product-cart__feedback {
+		justify-content: center;
+	}
+
+	.product-cart__indicators {
+		margin: 0 auto;
+		margin-bottom: 25px;
+	}
+
+	.product-cart__calc-description {
+		text-align: center;
+	}
+
+	.product-cart__prices {
+		justify-content: center;
+	}
+
+	.product-cart__buttons {
+		justify-content: center;
+	}
+
+	.product-cart__basis {
+		width: 450px;
+		margin: 0 auto;
+	}
+
+	.product-cart__special-offer-info {
+		font-size: 14px;
+	}
+
+	.product-cart__special-offer-link {
+		padding-right: 20px;
+
+		font-family: $fr-reg;
+
+		font-size: 11px;
+
+		&::before {
+			top: -1.5px;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.product-cart {
+		width: 480px;
+		margin-bottom: 30px;
+		padding-top: 25px;
+	}
+
+	.product-cart__main {
+		margin-bottom: 25px;
+	}
+
+	.product-cart__info {
+		width: 480px;
+	}
+
+	.product-cart__calc {
+		margin-bottom: 15px;
+	}
+
+	.product-cart__calc-list {
+		justify-content: center;
+		flex-wrap: wrap;
+
+		width: 480px;
+	}
+
+	.product-cart__calc-item {
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+
+	.product-cart__buttons {
+		flex-direction: column;
+		align-items: center;
+
+		margin-bottom: 25px;
+	}
+
+	.product-cart__to-cart {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.product-cart__show-passport {
+		margin-right: 0;
+	}
+
+	.product-cart__special-offer-link {
+
+		&::before {
+			top: 4px;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	.product-cart {
+		width: 300px;
+	}
+
+	.product-cart__img {
+		width: 300px;
+	}
+
+	.product-cart__img img {
+		width: 300px;
+		height: 227px;
+	}
+
+	.product-cart__img p {
+		font-size: 12px;
+	}
+
+	.product-cart__info {
+		width: 300px;
+	}
+
+	.product-cart__title {
+		margin-bottom: 10px;
+
+		font-size: 30px;
+	}
+
+	.product-cart__feedback {
+		margin-bottom: 10px;
+	}
+
+	.product-cart__indicators {
+		margin-bottom: 15px;
+	}
+
+	.product-cart__calc-list {
+		width: 300px;
+	}
+
+	.product-cart__prices {
+		margin-bottom: 15px;
+	}
+
+	.product-cart__price {
+		margin-right: 30px;
+	}
+
+	.product-cart__to-cart, .product-cart__show-passport {
+		padding: 18px 0;
+	}
+
+	.product-cart__special-offer {
+		display: none;
+	}
+
+	.product-cart__basis {
+		width: 100%;
+		padding-left: 0;
+
+		text-align: center;
+
+		&::before {
+			display: none;
+		}
+
+	}
+
+}
