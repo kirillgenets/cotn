@@ -1,3 +1,48 @@
+var showPassportButton = document.querySelector('.product-cart__show-passport');
+var bigPicture = $('.big-picture');
+var bigPictureImg = document.querySelector('.big-picture__img');
+var bigPictureClose = document.querySelector('.big-picture__close');
+
+showPassportButton.addEventListener('click', onShowPassportButtonClick);
+
+bigPictureClose.addEventListener('click', onBigPictureCloseButtonClick);
+document.addEventListener('keydown', onBigPictureCancelKeyDown);
+bigPicture.click(onBigPictureClick);
+
+function onShowPassportButtonClick() {
+
+	bigPicture.addClass('big-picture--quality');
+	bigPictureImg.setAttribute('src', showPassportButton.getAttribute('value'));
+	bigPicture.show('fast');
+
+}
+
+function onBigPictureClick(evt) {
+
+	if (evt.target.classList.contains('overlay')) {
+		bigPicture.hide('fast');
+		bigPicture.removeClass('.big-picture--quality');
+		bigPicture.removeClass('.big-picture--certificates');
+	}
+
+}
+
+function onBigPictureCloseButtonClick() {
+	bigPicture.hide('fast');
+	bigPicture.removeClass('.big-picture--quality');
+	bigPicture.removeClass('.big-picture--certificates');
+}
+
+function onBigPictureCancelKeyDown(evt) {
+
+	if (evt.key === 'Escape') {
+		bigPicture.hide('fast');
+		bigPicture.removeClass('.big-picture--quality');
+		bigPicture.removeClass('.big-picture--certificates');
+	}
+
+}
+
 initProductCartCalc()
 
 function initProductCartCalc() {
