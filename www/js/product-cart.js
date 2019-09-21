@@ -53,7 +53,7 @@ function initProductCartCalc() {
 	var literPrice = document.querySelector('.product-cart__title').dataset.price;
 	var literPriceText = document.querySelector('.product-cart__price-value--per-liter');
 
-	literPriceText.textContent = literPrice;
+	literPriceText.textContent = literPrice.replace('.',',');
 
 	var amountType = document.getElementsByName('product-cart-amount');
 
