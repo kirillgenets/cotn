@@ -4440,7 +4440,7 @@ GOODS
   .goods__shown-amount {
     margin-bottom: 15px; }
   .goods__view-buttons {
-    align-self: flex-end; }
+    display: none; }
   .goods__switch {
     display: flex;
     justify-content: space-between;
