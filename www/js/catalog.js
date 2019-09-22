@@ -48,6 +48,13 @@ viewButtons.forEach(function (item) {
 	item.addEventListener('click', function (evt) {
 		document.querySelector('.goods__view-button--chosen').classList.remove('goods__view-button--chosen');
 		evt.target.parentNode.classList.add('goods__view-button--chosen');
+
+		if (evt.target.parentNode.classList.contains('goods__view-button--column')) {
+			goodsList.addClass('goods__list--column');
+		} else {
+			goodsList.removeClass('goods__list--column');
+		}
+
 	});
 
 });

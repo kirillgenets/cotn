@@ -4402,14 +4402,39 @@ GOODS
 @media screen and (max-width: 1200px) {
   .goods {
     width: 510px; }
+  .goods__sort-wrapper {
+    flex-direction: column; }
   .goods__list .product {
     width: 250px; } }
+
+@media screen and (min-width: 806px) {
+  .goods__list--column {
+    flex-direction: column;
+    align-items: center; }
+  .goods__list--column .product {
+    display: flex;
+    align-items: center;
+    width: 510px;
+    border: none;
+    border-top: 1px solid #e1e1e1;
+    text-align: left; }
+    .goods__list--column .product:first-child {
+      border-top: none; }
+  .goods__list--column .product__img {
+    margin-bottom: 0;
+    margin-right: 140px; }
+  .goods__list--column .product__title {
+    margin-bottom: 5px; }
+  .goods__list--column .product__description {
+    margin-bottom: 10px; }
+  .goods__list--column .product__prices {
+    margin-bottom: 10px; }
+  .goods__list--column .product__order {
+    margin-bottom: 5px; } }
 
 @media screen and (max-width: 805px) {
   .goods {
     width: 250px; }
-  .goods__sort-wrapper {
-    flex-direction: column; }
   .goods__sort-main {
     flex-direction: column; }
   .goods__shown-amount {
