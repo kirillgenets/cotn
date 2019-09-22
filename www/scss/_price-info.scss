@@ -1,0 +1,93 @@
+/**********
+PRICE INFO
+**********/
+
+.price-info {
+	width: 1170px;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 185px;
+}
+
+.price-info__path {
+	margin-bottom: 40px;
+}
+
+.price-info__title {
+	margin: 0;
+	margin-bottom: 30px;
+
+	font-family: $fr-l;
+	font-size: 48px;
+	font-weight: 200;
+}
+
+.price-info__description {
+	margin: 0;
+	margin-bottom: 60px;
+
+	font-family: $fr-l;
+	font-size: 16px;
+	font-weight: 200;
+}
+
+.price-info__price {
+	margin-bottom: 65px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1200px) {
+
+	.price-info {
+		width: 768px;
+	}
+
+	.price-info__title {
+		font-size: 36px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.price-info {
+		width: 480px;
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+
+	.price-info__path {
+		margin-bottom: 15px;
+	}
+
+	.price-info__title {
+		margin-bottom: 20px;
+
+		font-size: 24px;
+	}
+
+	.price-info__description {
+		margin-bottom: 20px;
+
+		font-size: 14px;
+	}
+
+	.price-info__price {
+		margin-bottom: 30px;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	.price-info {
+		width: 300px;
+	}
+
+}

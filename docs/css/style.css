@@ -6022,3 +6022,180 @@ ANOTHER PRODUCTS
   .another-products__title {
     margin-bottom: 10px;
     font-size: 24px; } }
+
+/**********
+PRICE INFO
+**********/
+.price-info {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 185px; }
+
+.price-info__path {
+  margin-bottom: 40px; }
+
+.price-info__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Francker Light", Tahoma, sans-serif;
+  font-size: 48px;
+  font-weight: 200; }
+
+.price-info__description {
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: "Francker Light", Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 200; }
+
+.price-info__price {
+  margin-bottom: 65px; }
+  .price-info__price:last-child {
+    margin-bottom: 0; }
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1200px) {
+  .price-info {
+    width: 768px; }
+  .price-info__title {
+    font-size: 36px; } }
+
+@media screen and (max-width: 800px) {
+  .price-info {
+    width: 480px;
+    padding-top: 30px;
+    padding-bottom: 50px; }
+  .price-info__path {
+    margin-bottom: 15px; }
+  .price-info__title {
+    margin-bottom: 20px;
+    font-size: 24px; }
+  .price-info__description {
+    margin-bottom: 20px;
+    font-size: 14px; }
+  .price-info__price {
+    margin-bottom: 30px; } }
+
+@media screen and (max-width: 520px) {
+  .price-info {
+    width: 300px; } }
+
+/*****
+PRICE
+*****/
+/*****
+PRICE
+*****/
+.price__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Francker Regular", Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 200; }
+
+.price__table {
+  width: 100%; }
+
+.price__table-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  padding-left: 15px;
+  border-top: 1px solid #e1e1e1; }
+  .price__table-row:nth-child(2) {
+    border: none; }
+  .price__table-row:last-child {
+    border-bottom: 1px solid #e1e1e1; }
+  .price__table-row--head {
+    padding: 20px 0;
+    padding-left: 15px;
+    border: none;
+    background-color: #f1f1f1; }
+
+.price__table-title {
+  width: 150px;
+  font-family: "Francker Light", Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: left;
+  color: #747474; }
+  .price__table-title--basis {
+    width: 465px; }
+
+.price__table-item {
+  width: 150px;
+  font-family: "Francker Light", Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 200; }
+  .price__table-item--name {
+    font-family: "Francker Regular", Tahoma, sans-serif;
+    font-weight: 300; }
+  .price__table-item--basis {
+    width: 295px; }
+  .price__table-item--buy {
+    display: flex;
+    justify-content: flex-end; }
+  .price__table-item--buy a {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #faeaca;
+    font-family: "Francker Semibold", Tahoma, sans-serif;
+    font-size: 12px;
+    color: #110c10;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.3s; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 768px) {
+  .price__table-item--buy a:hover {
+    opacity: 0.7; }
+  .price__table-item--buy a:active {
+    opacity: 0.5; } }
+
+@media screen and (max-width: 1200px) {
+  .price__table-title {
+    width: 80px;
+    font-size: 12px; }
+    .price__table-title--basis {
+      width: 310px; }
+  .price__table-item {
+    width: 80px;
+    font-size: 12px; }
+    .price__table-item--basis {
+      width: 200px; } }
+
+@media screen and (max-width: 800px) {
+  .price__title {
+    margin-bottom: 15px;
+    font-size: 20px; }
+  .price__table-row {
+    padding: 10px;
+    padding-right: 0; }
+  .price__table-title {
+    width: 50px;
+    font-size: 10px; }
+    .price__table-title--basis {
+      width: 180px; }
+  .price__table-item {
+    width: 50px;
+    font-size: 10px; }
+    .price__table-item--basis {
+      width: 110px; }
+    .price__table-item--buy a {
+      padding: 10px 0;
+      font-size: 10px; } }
+
+@media screen and (max-width: 520px) {
+  .price__table {
+    display: block;
+    max-width: 300px;
+    width: 300px;
+    overflow-x: scroll; }
+  .price__table-row {
+    width: 100%; }
+  .price__table-item, .price__table-title {
+    margin-right: 20px; } }
