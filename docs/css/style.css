@@ -1971,6 +1971,7 @@ PRODUCT
   margin-top: 0;
   margin-bottom: 15px;
   font-size: 20px;
+  font-weight: 300;
   color: #110c10; }
 
 .product__description {
@@ -4414,23 +4415,62 @@ GOODS
   .goods__list--column .product {
     display: flex;
     align-items: center;
-    width: 510px;
-    border: none;
-    border-top: 1px solid #e1e1e1;
+    width: 100%;
+    padding: 15px;
     text-align: left; }
-    .goods__list--column .product:first-child {
-      border-top: none; }
   .goods__list--column .product__img {
+    width: 55px;
+    height: 85px;
     margin-bottom: 0;
-    margin-right: 140px; }
+    margin-right: 20px; }
+  .goods__list--column .product__info {
+    margin-right: 20px; }
   .goods__list--column .product__title {
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    font-size: 14px; }
   .goods__list--column .product__description {
-    margin-bottom: 10px; }
+    margin: 0;
+    font-size: 12px; }
   .goods__list--column .product__prices {
-    margin-bottom: 10px; }
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0; }
+  .goods__list--column .product__price {
+    font-size: 14px; }
   .goods__list--column .product__order {
-    margin-bottom: 5px; } }
+    width: 100px;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 10px; }
+  .goods__list--column .product__advantage {
+    display: none; } }
+
+@media screen and (min-width: 1200px) {
+  .goods__list--column .product {
+    width: 100%;
+    padding: 18px 30px; }
+  .goods__list--column .product__img {
+    margin-right: 40px; }
+  .goods__list--column .product__info {
+    margin-right: 40px; }
+  .goods__list--column .product__title {
+    margin-bottom: 10px;
+    font-size: 20px; }
+  .goods__list--column .product__description {
+    margin: 0;
+    font-size: 14px; }
+  .goods__list--column .product__prices {
+    flex-direction: row;
+    margin-bottom: 10px; }
+  .goods__list--column .product__price {
+    margin-right: 10px;
+    font-size: 16px; }
+  .goods__list--column .product__order {
+    width: 208px;
+    padding: 20px 0;
+    font-size: 12px; }
+  .goods__list--column .product__advantage {
+    display: none; } }
 
 @media screen and (max-width: 805px) {
   .goods {
