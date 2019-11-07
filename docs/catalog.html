@@ -150,6 +150,9 @@
 
 			<div class="header__shop shopping-cart">
 				<button class="shopping-cart__button">
+					<!-- ПОДТЯГИВАЙ ОТСЮДА -->
+					<span class="shopping-cart__count">2</span>
+					<!-- И ДО ЭТОГО МОМЕНТА -->
 					<span class="visually-hidden">Просмотреть корзину</span>
 				</button>
 				<div class="shopping-cart__wrapper">
@@ -446,12 +449,13 @@
 			<h1 class="catalog__title">ДТ Евро-5 Газпром</h1>
 			<div class="catalog__main">
 
+				<!-- ПОДТЯГИВАЙ ОТСЮДА -->
 				<div class="sidebar">
-					<ul class="sidebar__product-types-list">
-						<li class="sidebar__product-type sidebar__product-type--oil">
-							<span class="sidebar__product-type-title">
+					<form action="#">
+						<fieldset class="sidebar__product-type sidebar__product-type--oil">
+							<h4 class="sidebar__product-type-title">
 								Масла
-							</span>
+							</h4>
 							<ul class="sidebar__product-type-sublist">
 								<li class="sidebar__product-type-subitem">
 									<a href="#">Масла Liqui Moli</a>
@@ -466,11 +470,11 @@
 									<a href="#">Масла Meguin</a>
 								</li>
 							</ul>
-						</li>
-						<li class="sidebar__product-type sidebar__product-type--petroleum">
-							<span class="sidebar__product-type-title">
+						</fieldset>
+						<fieldset class="sidebar__product-type sidebar__product-type--petroleum">
+							<h4 class="sidebar__product-type-title">
 								Нефтепродукты
-							</span>
+							</h4>
 							<ul class="sidebar__product-type-sublist">
 								<li class="sidebar__product-type-subitem">
 									<a href="#">Бензин Liqui Moli</a>
@@ -485,82 +489,83 @@
 									<a href="#">Бензин Meguin</a>
 								</li>
 							</ul>
-						</li>
-					</ul>
-					<div class="sidebar__price">
-						<p class="sidebar__price-title">Цена</p>
-						<div class="sidebar__price-content">
-							<div class="sidebar__price-slider">
-								<div class="sidebar__price-line">
-									<div class="sidebar__price-pin sidebar__price-pin--low">
-										<button></button>
+						</fieldset>
+						<fieldset class="sidebar__price">
+							<h4 class="sidebar__price-title">Цена</h4>
+							<div class="sidebar__price-content">
+								<div class="sidebar__price-slider">
+									<div class="sidebar__price-line">
+										<div class="sidebar__price-pin sidebar__price-pin--low">
+											<button></button>
+										</div>
+										<div class="sidebar__price-level"></div>
+										<div class="sidebar__price-pin sidebar__price-pin--high">
+											<button></button>
+										</div>
 									</div>
-									<div class="sidebar__price-level"></div>
-									<div class="sidebar__price-pin sidebar__price-pin--high">
-										<button></button>
+								</div>
+								<div class="sidebar__prices-fields">
+									<div class="sidebar__price-field sidebar__price-field--low">
+										<input type="text" name="lower-price">
+										<span class="rubble">Р</span>
+									</div>
+									<div class="sidebar__price-field sidebar__price-field--high">
+										<input type="text" name="higher-price">
+										<span class="rubble">Р</span>
 									</div>
 								</div>
 							</div>
-							<div class="sidebar__prices-fields">
-								<div class="sidebar__price-field sidebar__price-field--low">
-									<input type="text" name="lower-price">
-									<span class="rubble">Р</span>
-								</div>
-								<div class="sidebar__price-field sidebar__price-field--high">
-									<input type="text" name="higher-price">
-									<span class="rubble">Р</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="sidebar__brands">
-						<p class="sidebar__brands-title">Бренд</p>
-						<ul class="sidebar__brands-list">
-							<li class="sidebar__brand">
-								<input class="sidebar__brand-choose" id="dt-gazprom" type="checkbox" name="choose-product-type">
-								<label class="sidebar__brand-label" for="dt-gazprom">ДТ Евро-5 Газпром</label>
-								<p class="sidebar__brand-count">523</p>
-							</li>
-							<li class="sidebar__brand">
-								<input class="sidebar__brand-choose" id="dt-bashneft" type="checkbox" name="choose-product-type">
-								<label class="sidebar__brand-label" for="dt-bashneft">ДТ Евро-5 Башнефть</label>
-								<p class="sidebar__brand-count">423</p>
-							</li>
-							<li class="sidebar__brand">
-								<input class="sidebar__brand-choose" id="meguin" type="checkbox" name="choose-product-type">
-								<label class="sidebar__brand-label" for="meguin">MEGUIN</label>
-								<p class="sidebar__brand-count">33</p>
-							</li>
-							<li class="sidebar__brand">
-								<input class="sidebar__brand-choose" id="liqui-moli" type="checkbox" name="choose-product-type">
-								<label class="sidebar__brand-label" for="liqui-moli">LIQUI MOLI</label>
-								<p class="sidebar__brand-count">123</p>
-							</li>
-							<li class="sidebar__brand">
-								<input class="sidebar__brand-choose" id="meguin-2" type="checkbox" name="choose-product-type">
-								<label class="sidebar__brand-label" for="meguin-2">MEGUIN</label>
-								<p class="sidebar__brand-count">33</p>
-							</li>
-							<li class="sidebar__brand">
-								<input class="sidebar__brand-choose" id="sintoil" type="checkbox" name="choose-product-type">
-								<label class="sidebar__brand-label" for="sintoil">SINTOIL</label>
-								<p class="sidebar__brand-count">63</p>
-							</li>
-							<li class="sidebar__brand">
-								<input class="sidebar__brand-choose" id="texaco" type="checkbox" name="choose-product-type">
-								<label class="sidebar__brand-label" for="texaco">TEXACO</label>
-								<p class="sidebar__brand-count">33</p>
-							</li>
-						</ul>
-					</div>
-					<div class="sidebar__filtrate">
-						<button class="sidebar__filtrate-button">Применить фильтр</button>
-						<button class="sidebar__remove-filter-button">Сбросить фильтр</button>
-					</div>
-					<a class="sidebar__banner" href="#">
-						<img src="img/banner.jpg" alt="Реклама нашей продукции">
-					</a>
+						</fieldset>
+						<fieldset class="sidebar__brands">
+							<h4 class="sidebar__brands-title">Бренд</h4>
+							<ul class="sidebar__brands-list">
+								<li class="sidebar__brand">
+									<input class="sidebar__brand-choose" id="dt-gazprom" type="checkbox" name="choose-product-type">
+									<label class="sidebar__brand-label" for="dt-gazprom">ДТ Евро-5 Газпром</label>
+									<p class="sidebar__brand-count">523</p>
+								</li>
+								<li class="sidebar__brand">
+									<input class="sidebar__brand-choose" id="dt-bashneft" type="checkbox" name="choose-product-type">
+									<label class="sidebar__brand-label" for="dt-bashneft">ДТ Евро-5 Башнефть</label>
+									<p class="sidebar__brand-count">423</p>
+								</li>
+								<li class="sidebar__brand">
+									<input class="sidebar__brand-choose" id="meguin" type="checkbox" name="choose-product-type">
+									<label class="sidebar__brand-label" for="meguin">MEGUIN</label>
+									<p class="sidebar__brand-count">33</p>
+								</li>
+								<li class="sidebar__brand">
+									<input class="sidebar__brand-choose" id="liqui-moli" type="checkbox" name="choose-product-type">
+									<label class="sidebar__brand-label" for="liqui-moli">LIQUI MOLI</label>
+									<p class="sidebar__brand-count">123</p>
+								</li>
+								<li class="sidebar__brand">
+									<input class="sidebar__brand-choose" id="meguin-2" type="checkbox" name="choose-product-type">
+									<label class="sidebar__brand-label" for="meguin-2">MEGUIN</label>
+									<p class="sidebar__brand-count">33</p>
+								</li>
+								<li class="sidebar__brand">
+									<input class="sidebar__brand-choose" id="sintoil" type="checkbox" name="choose-product-type">
+									<label class="sidebar__brand-label" for="sintoil">SINTOIL</label>
+									<p class="sidebar__brand-count">63</p>
+								</li>
+								<li class="sidebar__brand">
+									<input class="sidebar__brand-choose" id="texaco" type="checkbox" name="choose-product-type">
+									<label class="sidebar__brand-label" for="texaco">TEXACO</label>
+									<p class="sidebar__brand-count">33</p>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="sidebar__filtrate">
+							<button class="sidebar__filtrate-button">Применить фильтр</button>
+							<button class="sidebar__remove-filter-button">Сбросить фильтр</button>
+						</fieldset>
+						<a class="sidebar__banner" href="#">
+							<img src="img/banner.jpg" alt="Реклама нашей продукции">
+						</a>
+					</form>
 				</div>
+				<!-- И ДО СИХ ПОР -->
 
 				<div class="goods">
 					<div class="goods__sort-wrapper">
@@ -811,12 +816,12 @@
 						</li>
 					</ul>
 					<div class="pagination">
-						<button class="pagination__prev">
-							<a href="#">
-								<img src="img/arrow-slider-reviews.png" alt="Кнопка назад">
-							</a>
-						</button>
 						<ul class="pagination__list">
+							<li class="pagination__item">
+								<a class="pagination__prev" href="#">
+									<img src="img/arrow-slider-reviews.png" alt="Кнопка назад">
+								</a>
+							</li>
 							<li class="pagination__item">
 								<a href="#">1</a>
 							</li>
@@ -829,12 +834,12 @@
 							<li class="pagination__item">
 								<a href="#">4</a>
 							</li>
+							<li class="pagination__item">
+								<a class="pagination__next" href="#">
+									<img src="img/arrow-slider-reviews.png" alt="Кнопка вперед">
+								</a>
+							</li>
 						</ul>
-						<button class="pagination__next">
-							<a href="#">
-								<img src="img/arrow-slider-reviews.png" alt="Кнопка вперед">
-							</a>
-						</button>
 					</div>
 				</div>
 

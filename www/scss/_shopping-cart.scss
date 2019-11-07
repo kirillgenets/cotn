@@ -22,31 +22,29 @@ SHOPPING CART
 
 	transition: 0.3s;
 
-	&::after {
-		content: '2';
-
-		width: 18px;
-		height: 18px;
-		box-sizing: border-box;
-		padding-top: 1px;
-		border-radius: 50%;
-
-		position: absolute;
-		right: -15px;
-		top: -15px;
-
-		background-color: #faeaca;
-
-		font-family: $fr-l;
-		font-size: 12px;
-		font-weight: 300;
-		text-align: center;
-	}
-
 	&:focus {
 		outline: none;
 	}
 
+}
+
+.shopping-cart__count {
+	width: 18px;
+	height: 18px;
+	box-sizing: border-box;
+	padding-top: 1px;
+	border-radius: 50%;
+
+	position: absolute;
+	right: -15px;
+	top: -15px;
+
+	background-color: #faeaca;
+
+	font-family: $fr-l;
+	font-size: 12px;
+	font-weight: 300;
+	text-align: center;
 }
 
 .shopping-cart__wrapper {

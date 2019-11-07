@@ -564,6 +564,13 @@ img {
 button:focus, a:focus {
   outline: none; }
 
+fieldset {
+  border: none;
+  padding: 0; }
+
+h4 {
+  margin: 0; }
+
 a {
   text-decoration: none; }
 
@@ -800,23 +807,23 @@ SHOPPING CART
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
-  .shopping-cart__button::after {
-    content: '2';
-    width: 18px;
-    height: 18px;
-    box-sizing: border-box;
-    padding-top: 1px;
-    border-radius: 50%;
-    position: absolute;
-    right: -15px;
-    top: -15px;
-    background-color: #faeaca;
-    font-family: "Francker Light", Tahoma, sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    text-align: center; }
   .shopping-cart__button:focus {
     outline: none; }
+
+.shopping-cart__count {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  padding-top: 1px;
+  border-radius: 50%;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  background-color: #faeaca;
+  font-family: "Francker Light", Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center; }
 
 .shopping-cart__wrapper {
   display: none;
@@ -4189,16 +4196,14 @@ SIDEBAR
 .sidebar {
   width: 240px; }
 
-.sidebar__product-types-list {
-  list-style: none;
-  width: 230px;
-  margin: 0 auto 35px;
-  padding: 0; }
+.sidebar fieldset {
+  width: 230px; }
 
 .sidebar__product-type {
   padding: 20px 0;
   border-top: 1px solid #e1e1e1; }
-  .sidebar__product-type:last-child {
+  .sidebar__product-type--petroleum {
+    margin-bottom: 15px;
     border-bottom: 1px solid #e1e1e1; }
   .sidebar__product-type--oil .sidebar__product-type-title::before {
     width: 19px;
@@ -4209,13 +4214,15 @@ SIDEBAR
     height: 17px;
     background-image: url(../img/drop.svg); }
 
+.sidebar h4 {
+  font-family: "Francker Semibold", Tahoma, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase; }
+
 .sidebar__product-type-title {
   display: block;
   padding-left: 25px;
   position: relative;
-  font-family: "Francker Semibold", Tahoma, sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
@@ -4267,9 +4274,6 @@ SIDEBAR
   margin: 0;
   margin-bottom: 25px;
   position: relative;
-  font-family: "Francker Semibold", Tahoma, sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
   cursor: pointer; }
   .sidebar__price-title::after {
     content: '+';
@@ -4395,9 +4399,6 @@ SIDEBAR
   margin: 0;
   margin-bottom: 25px;
   position: relative;
-  font-family: "Francker Semibold", Tahoma, sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
   cursor: pointer; }
   .sidebar__brands-title::after {
     content: '+';
@@ -4529,6 +4530,8 @@ SIDEBAR
 @media screen and (max-width: 1200px) {
   .sidebar {
     width: 210px; }
+  .sidebar fieldset {
+    width: 100%; }
   .sidebar__product-types-list {
     width: 200px; }
   .sidebar__banner img {
@@ -4923,7 +4926,7 @@ PAGINATION
   .pagination__prev:focus, .pagination__next:focus {
     outline: none; }
 
-.pagination__next {
+.pagination__next img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
 
@@ -4933,7 +4936,7 @@ PAGINATION
   -webkit-box-pack: justify;
           justify-content: space-between;
   list-style: none;
-  width: 255px;
+  width: 100%;
   margin: 0;
   padding: 0; }
 

@@ -6,19 +6,16 @@ SIDEBAR
 	width: 240px;
 }
 
-.sidebar__product-types-list {
-	list-style: none;
-
+.sidebar fieldset {
 	width: 230px;
-	margin: 0 auto 35px;
-	padding: 0;
 }
 
 .sidebar__product-type {
 	padding: 20px 0;
 	border-top: 1px solid #e1e1e1;
 
-	&:last-child {
+	&--petroleum {
+		margin-bottom: 15px;
 		border-bottom: 1px solid #e1e1e1;
 	}
 
@@ -46,16 +43,18 @@ SIDEBAR
 
 }
 
+.sidebar h4 {
+	font-family: $fr-smb;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
 .sidebar__product-type-title {
 	display: block;
 
 	padding-left: 25px;
 
 	position: relative;
-
-	font-family: $fr-smb;
-	font-size: 12px;
-	text-transform: uppercase;
 
 	cursor: pointer;
 
@@ -132,10 +131,6 @@ SIDEBAR
 	margin-bottom: 25px;
 
 	position: relative;
-
-	font-family: $fr-smb;
-	font-size: 12px;
-	text-transform: uppercase;
 
 	cursor: pointer;
 
@@ -325,10 +320,6 @@ SIDEBAR
 	margin-bottom: 25px;
 
 	position: relative;
-
-	font-family: $fr-smb;
-	font-size: 12px;
-	text-transform: uppercase;
 
 	cursor: pointer;
 
@@ -560,6 +551,10 @@ SIDEBAR
 
 	.sidebar {
 		width: 210px;
+	}
+
+	.sidebar fieldset {
+		width: 100%;
 	}
 
 	.sidebar__product-types-list {

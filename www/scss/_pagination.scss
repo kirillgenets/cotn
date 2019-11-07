@@ -30,8 +30,8 @@ PAGINATION
 
 }
 
-.pagination__next {
-	transform: rotate(180deg);
+.pagination__next img {
+	transform: rotate(180deg)
 }
 
 .pagination__list {
@@ -40,7 +40,7 @@ PAGINATION
 
 	list-style: none;
 
-	width: 255px;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 }
