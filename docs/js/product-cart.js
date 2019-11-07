@@ -2,12 +2,79 @@ var showPassportButton = document.querySelector('.product-cart__show-passport');
 var bigPicture = $('.big-picture');
 var bigPictureImg = document.querySelector('.big-picture__img');
 var bigPictureClose = document.querySelector('.big-picture__close');
+var allProductNavs = document.querySelectorAll('.product-info__nav-item');
+var productNavDescription = document.querySelector('.product-info__nav-item--description button');
+var productNavCharacteristic = document.querySelector('.product-info__nav-item--characteristic button');
+var productNavDelivery = document.querySelector('.product-info__nav-item--delivery button');
+var productNavComments = document.querySelector('.product-info__nav-item--comments button');
+var allProductContents = document.querySelectorAll('.product-info__content');
+var productContentDescription = document.querySelector('.product-info__content--description');
+var productContentCharacteristic = document.querySelector('.product-info__content--characteristic');
+var productContentDelivery = document.querySelector('.product-info__content--delivery');
+var productContentComments = document.querySelector('.product-info__content--comments');
+
+productNavDescription.addEventListener('click', onProductNavDescriptionClick);
+productNavCharacteristic.addEventListener('click', onProductNavCharacteristicClick);
+productNavDelivery.addEventListener('click', onProductNavDeliveryClick);
+productNavComments.addEventListener('click', onProductNavCommentsClick);
 
 showPassportButton.addEventListener('click', onShowPassportButtonClick);
 
 bigPictureClose.addEventListener('click', onBigPictureCloseButtonClick);
 document.addEventListener('keydown', onBigPictureCancelKeyDown);
 bigPicture.click(onBigPictureClick);
+
+function onProductNavDescriptionClick() {
+	allProductContents.forEach(content => {
+		content.classList.add('hidden');
+	});
+
+	allProductNavs.forEach(item => {
+		item.classList.remove('product-info__nav-item--active');
+	});
+	
+	productNavDescription.parentNode.classList.add('product-info__nav-item--active');
+	productContentDescription.classList.remove('hidden');
+}
+
+function onProductNavCharacteristicClick() {
+	allProductContents.forEach(content => {
+		content.classList.add('hidden');
+	});
+
+	allProductNavs.forEach(item => {
+		item.classList.remove('product-info__nav-item--active');
+	});
+	
+	productNavCharacteristic.parentNode.classList.add('product-info__nav-item--active');
+	productContentCharacteristic.classList.remove('hidden');
+}
+
+function onProductNavDeliveryClick() {
+	allProductContents.forEach(content => {
+		content.classList.add('hidden');
+	});
+
+	allProductNavs.forEach(item => {
+		item.classList.remove('product-info__nav-item--active');
+	});
+	
+	productNavDelivery.parentNode.classList.add('product-info__nav-item--active');
+	productContentDelivery.classList.remove('hidden');
+}
+
+function onProductNavCommentsClick() {
+	allProductContents.forEach(content => {
+		content.classList.add('hidden');
+	});
+
+	allProductNavs.forEach(item => {
+		item.classList.remove('product-info__nav-item--active');
+	});
+	
+	productNavComments.parentNode.classList.add('product-info__nav-item--active');
+	productContentComments.classList.remove('hidden');
+}
 
 function onShowPassportButtonClick() {
 
