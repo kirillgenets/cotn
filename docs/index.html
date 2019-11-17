@@ -1369,6 +1369,44 @@
 			</div>
 		</section>
 
+		<div class="big-picture big-picture--form overlay hidden">
+			<div class="big-picture__wrapper">
+				<button class="big-picture__close">
+					<span class="visually-hidden">Закрыть окно</span>
+				</button>
+				<form class="order-fuel" action="#">
+					<h2 class="visually-hidden">
+						Заполните форму, чтобы сделать заказ топлива
+					</h2>
+					<div class="order-fuel__main">
+						<ul class="order-fuel__list">
+							<li class="order-fuel__item">
+								<label class="visually-hidden" for="order-fuel-name">
+									Напишите Ваше имя
+								</label>
+								<input class="order-fuel__field" id="order-fuel-name" name="order-fuel-name" type="text" placeholder="Ваше имя">
+								<div class="order-fuel__focus-line"></div>
+							</li>
+							<li class="order-fuel__item">
+								<label class="visually-hidden" for="order-fuel-phone">
+									Напишите Ваше имя
+								</label>
+								<input class="order-fuel__field" id="order-fuel-phone" name="order-fuel-phone" type="tel" placeholder="Ваш телефон">
+								<div class="order-fuel__focus-line"></div>
+							</li>
+						</ul>
+						<button class="order-fuel__submit" type="submit">
+							Заказать топливо
+						</button>
+					</div>
+					<div class="order-fuel__agree">
+						<input class="order-fuel__agree-input visually-hidden" id="order-fuel-agree" name="order-fuel-agree" type="checkbox">
+						<label class="order-fuel__agree-label" for="order-fuel-agree">Согласен с условиями обработки данных</label>
+					</div>
+				</form>
+			</div>
+		</div>
+
 	</main>
 
 	<footer class="footer">
@@ -1475,6 +1513,7 @@
 			</div>
 
 		</div>
+
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -1486,5 +1525,6 @@
 	<script src="js/clients-slider.min.js"></script>
 	<script src="js/calc.min.js"></script>
 	<script src="js/news.min.js"></script>
+	<script src="js/index-modal.min.js"></script>
 	</body>
 </html>

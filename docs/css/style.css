@@ -5767,6 +5767,13 @@ CERTIFICATES
 /***********
 BIG PICTURE
 ***********/
+.big-picture--form {
+  padding-top: 150px; }
+
+.big-picture--form .big-picture__wrapper {
+  width: 700px;
+  padding-bottom: 40px; }
+
 .big-picture__wrapper {
   display: -webkit-box;
   display: flex;
@@ -5805,6 +5812,12 @@ BIG PICTURE
   height: 312px; }
 
 /*RESPONSIVE*/
+@media screen and (max-width: 1200px) {
+  .big-picture--form .big-picture__wrapper {
+    width: 400px; }
+  .big-picture--form .order-fuel {
+    width: 300px; } }
+
 @media screen and (min-width: 768px) {
   .big-picture__close:hover {
     opacity: 1; }
@@ -5814,6 +5827,12 @@ BIG PICTURE
 @media screen and (max-width: 600px) {
   .big-picture {
     padding-top: 20px; }
+  .big-picture--form {
+    padding-top: 70px; }
+  .big-picture--form .big-picture__wrapper {
+    width: 300px; }
+  .big-picture--form .order-fuel {
+    width: 300px; }
   .big-picture--certificates .big-picture__wrapper {
     width: 300px; }
   .big-picture--certificates .big-picture__img {
