@@ -1,8 +1,8 @@
 initCalc();
 
-function getCheckedRadio(name) {
+function getCheckedRadio(selector) {
 
-	var radios = document.getElementsByName(name);
+	var radios = document.querySelectorAll(selector);
 
   for (var i = 0; i < radios.length; i++) {
 
@@ -22,9 +22,9 @@ function initCalc() {
 	var literPrice = document.querySelector('.calc__indicator--liter-price .calc__indicator-value');
 	var amountInfo = document.querySelector('.calc__indicator--amount .calc__indicator-value');
 
-	var productType = document.getElementsByName('product-type');
-	var deliveryType = document.getElementsByName('delivery-type');
-	var amountType = document.getElementsByName('amount-type');
+	var productType = document.querySelectorAll('.calc__radio--product-type');
+	var deliveryType = document.querySelectorAll('.calc__radio--delivery-type');
+	var amountType = document.querySelectorAll('.calc__radio--amount-type');
 
 	var productPrice = 0;
 	var deliveryPrice = 0;
@@ -37,7 +37,7 @@ function initCalc() {
 			productPrice = item.value;
 			literPrice.textContent = item.value.replace('.',',');
 
-			if (getCheckedRadio('product-type') != undefined && getCheckedRadio('delivery-type') != undefined && getCheckedRadio('amount-type') != undefined) {
+			if (getCheckedRadio('.calc__radio--product-type') != undefined && getCheckedRadio('.calc__radio--delivery-type') != undefined && getCheckedRadio('.calc__radio--amount-type') != undefined) {
 				calcTotal.textContent = countTotal(productPrice, deliveryPrice, amount);
 			}
 
@@ -51,7 +51,7 @@ function initCalc() {
 
 			deliveryPrice = item.value;
 
-			if (getCheckedRadio('product-type') != undefined && getCheckedRadio('delivery-type') != undefined && getCheckedRadio('amount-type') != undefined) {
+			if (getCheckedRadio('.calc__radio--product-type') != undefined && getCheckedRadio('.calc__radio--delivery-type') != undefined && getCheckedRadio('.calc__radio--amount-type') != undefined) {
 				calcTotal.textContent = countTotal(productPrice, deliveryPrice, amount);
 			}
 
@@ -66,7 +66,7 @@ function initCalc() {
 			amount = item.value;
 			amountInfo.textContent = item.value;
 
-			if (getCheckedRadio('product-type') != undefined && getCheckedRadio('delivery-type') != undefined && getCheckedRadio('amount-type') != undefined) {
+			if (getCheckedRadio('.calc__radio--product-type') != undefined && getCheckedRadio('.calc__radio--delivery-type') != undefined && getCheckedRadio('.calc__radio--amount-type') != undefined) {
 				calcTotal.textContent = countTotal(productPrice, deliveryPrice, amount);
 			}
 

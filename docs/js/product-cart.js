@@ -114,7 +114,6 @@ initProductCartCalc()
 
 function initProductCartCalc() {
 
-	var calc = document.querySelector('.product-cart__calc');
 	var calcTotal = document.querySelector('.product-cart__price-value--total');
 
 	var literPrice = document.querySelector('.product-cart__title').dataset.price;
@@ -122,7 +121,7 @@ function initProductCartCalc() {
 
 	literPriceText.textContent = literPrice.replace('.',',');
 
-	var amountType = document.getElementsByName('product-cart-amount');
+	var amountType = document.querySelectorAll('.product-cart__calc-radio');
 
 	var amount = 1;
 
@@ -132,7 +131,7 @@ function initProductCartCalc() {
 
 			amount = item.value;
 
-			if (getCheckedRadio('product-cart-amount') != undefined) {
+			if (getCheckedRadio('.product-cart__calc-radio') != undefined) {
 				calcTotal.textContent = countTotal(literPrice, amount);
 			}
 
@@ -148,9 +147,9 @@ function initProductCartCalc() {
 
 }
 
-function getCheckedRadio(name) {
+function getCheckedRadio(selector) {
 
-	var radios = document.getElementsByName(name);
+	var radios = document.querySelectorAll(selector);
 
   for (var i = 0; i < radios.length; i++) {
 

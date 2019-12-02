@@ -798,20 +798,21 @@
 					<li class="calc__selection-item">
 						<h3 class="calc__heading">Какая продукция нужна?</h3>
 						<ul class="calc__list">
+							<!-- ОТСЮДА -->
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="product-type" id="diesel" value="34.20">
+								<input class="calc__radio calc__radio--product-type" type="radio" name="product-type" id="diesel" value="34.20">
 								<label class="calc__label" for="diesel">Дизельное топливо</label>
 							</li>
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="product-type" id="diesel-analog" value="38.20">
+								<input class="calc__radio calc__radio--product-type" type="radio" name="product-type" id="diesel-analog" value="38.20">
 								<label class="calc__label" for="diesel-analog">Аналог дизельного топлива</label>
 							</li>
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="product-type" id="gasoline-95" value="30.20">
+								<input class="calc__radio calc__radio--product-type" type="radio" name="product-type" id="gasoline-95" value="30.20">
 								<label class="calc__label" for="gasoline-95">Бензин АИ-95</label>
 							</li>
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="product-type" id="gasoline-92" value="28.20">
+								<input class="calc__radio calc__radio--product-type" type="radio" name="product-type" id="gasoline-92" value="28.20">
 								<label class="calc__label" for="gasoline-92">Бензин АИ-92</label>
 							</li>
 						</ul>
@@ -820,31 +821,31 @@
 						<h3 class="calc__heading">Укажите объем:</h3>
 						<ul class="calc__list">
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="amount-type" id="500-liters" value="500">
+								<input class="calc__radio calc__radio--amount-type" type="radio" name="amount-type" id="500-liters" value="500">
 								<label class="calc__label" for="500-liters">500 л</label>
 							</li>
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="amount-type" id="1000-liters" value="1000">
+								<input class="calc__radio calc__radio--amount-type" type="radio" name="amount-type" id="1000-liters" value="1000">
 								<label class="calc__label" for="1000-liters">1000 л</label>
 							</li>
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="amount-type" id="5000-liters" value="5000">
+								<input class="calc__radio calc__radio--amount-type" type="radio" name="amount-type" id="5000-liters" value="5000">
 								<label class="calc__label" for="5000-liters">5000 л</label>
 							</li>
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="amount-type" id="15000-liters" value="15000">
+								<input class="calc__radio calc__radio--amount-type" type="radio" name="amount-type" id="15000-liters" value="15000">
 								<label class="calc__label" for="15000-liters">15000 л</label>
 							</li>
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="amount-type" id="20000-liters" value="20000">
+								<input class="calc__radio calc__radio--amount-type" type="radio" name="amount-type" id="20000-liters" value="20000">
 								<label class="calc__label" for="20000-liters">20000 л</label>
 							</li>
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="amount-type" id="25000-liters" value="25000">
+								<input class="calc__radio calc__radio--amount-type" type="radio" name="amount-type" id="25000-liters" value="25000">
 								<label class="calc__label" for="25000-liters">25000 л</label>
 							</li>
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="amount-type" id="30000-liters" value="30000">
+								<input class="calc__radio calc__radio--amount-type" type="radio" name="amount-type" id="30000-liters" value="30000">
 								<label class="calc__label" for="30000-liters">30000 л</label>
 						</li></ul>
 					</li>
@@ -852,11 +853,11 @@
 						<h3 class="calc__heading">Форма оплаты:</h3>
 						<ul class="calc__list">
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="fee-type" id="card-fee" value="0">
+								<input class="calc__radio calc__radio--fee-type" type="radio" name="fee-type" id="card-fee" value="0">
 								<label class="calc__label" for="card-fee">Безналичный расчет</label>
 							</li>
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="fee-type" id="cash-fee" value="0">
+								<input class="calc__radio calc__radio--fee-type" type="radio" name="fee-type" id="cash-fee" value="0">
 								<label class="calc__label" for="cash-fee">Наличный расчет</label>
 							</li>
 						</ul>
@@ -865,19 +866,20 @@
 						<h3 class="calc__heading">Выберите тип доставки:</h3>
 						<ul class="calc__list">
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="delivery-type" id="moscow" value="100">
+								<input class="calc__radio calc__radio--delivery-type" type="radio" name="delivery-type" id="moscow" value="100">
 								<label class="calc__label" for="moscow">Москва и МО</label>
 							</li>
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="delivery-type" id="russia" value="140">
+								<input class="calc__radio calc__radio--delivery-type" type="radio" name="delivery-type" id="russia" value="140">
 								<label class="calc__label" for="russia">По РФ</label>
 							</li>
 							<li class="calc__item">
-								<input class="calc__radio" type="radio" name="delivery-type" id="pickup" value="0">
+								<input class="calc__radio calc__radio--delivery-type" type="radio" name="delivery-type" id="pickup" value="0">
 								<label class="calc__label" for="pickup">Самовывоз</label>
 							</li>
 						</ul>
 					</li>
+					<!-- ДО СИХ ПОР -->
 					<li class="calc__selection-item">
 						<h3 class="calc__heading">Укажите адрес доставки:</h3>
 						<div class="calc__input-wrapper">
@@ -1523,8 +1525,8 @@
 	<script src="js/comments-slider.min.js"></script>
 	<script src="js/questions.min.js"></script>
 	<script src="js/clients-slider.min.js"></script>
-	<script src="js/calc.min.js"></script>
 	<script src="js/news.min.js"></script>
 	<script src="js/index-modal.min.js"></script>
+	<script src="js/calc.min.js"></script>
 	</body>
 </html>
